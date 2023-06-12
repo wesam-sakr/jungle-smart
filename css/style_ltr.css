@@ -1,0 +1,95 @@
+body {
+  direction: ltr;
+}
+.about .collect {
+  margin-right: 10px;
+}
+.carousel-caption p{
+  position: relative;
+}
+.carousel-caption p .bi{
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 40%;
+  left: 54%;
+}
+.shop-now .collection {
+  left: 0;
+  right: 0;
+}
+.shop-now .collection p{
+  position: relative;
+}
+.shop-now .collection p .bi{
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 40%;
+  padding-right: 8px;
+}
+ .heading .read-more{
+    position: relative;
+    right: 3%;
+}
+.heading .read-more .bi{
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 10%;
+}
+.subscribe .bi {
+  margin-left: 0px;
+  margin-right: 12px;
+}
+.popular .offer img {
+  transform: rotateY(180deg);
+}
+.popular .description-offer {
+  left: 6%;
+  right: 0;
+}
+.popular .shoping-now {
+  position: relative;
+}
+.popular .shoping-now .bi {
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 40%;
+  padding-right: 8px;
+}
+.the_shop_collection .accordion-button::after {
+  margin-right: 0;
+  margin-left: auto;
+}
+.detail-product .detail-1 .form-select {
+  background-position: right 0.75rem center;
+}
+.single-product .product-shipping .shipping-delivary .form-select {
+  background-position: right 0.75rem center;
+}
+#wizard .step.active::after, #wizard .step.finish::after {
+ 
+  bottom: 45%;
+  left: 75%;
+  right: 0%;
+
+}
+.step .bi {
+  margin: 0 5px 0 0;
+}
+.profile .nav .nav-link {
+  text-align: left;
+  
+}
+.back-page{
+  position: relative;
+}
+.back-page .bi{
+  position: absolute;
+  transform: rotateY(180deg);
+  bottom: 1%;
+}
+.payment-tab .form-check .form-check-input {
+  float: left;
+  margin-left: 0em;
+  margin-right: 0.5em;
+
+}
