@@ -59,6 +59,111 @@ jQuery(document).ready(function() {
   new WOW().init();
 });
 
+$(document).ready(function () {
+  $('.jquery-background-video').bgVideo({fadeIn: 2000});
+
+
+
+  //loader
+  $(document).ready(function () {
+  setTimeout(function () {$(".loader").fadeOut(1000);})
+    $('.partners .owl-carousel').owlCarousel({
+      center: true,
+      loop: true,
+      nav: true,
+      rtl: true,
+      margin: 10,
+      items: 6,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        600: {
+          items: 3,
+        },
+        900: {
+          items: 4,
+        },
+        1000: {
+          items: 6,
+        },
+      },
+    });
+    $(".rev-client .owl-carousel").owlCarousel({
+      loop: true,
+      nav: true,
+      rtl: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1,
+        }
+      }
+    });
+    $(".carousel-compare.owl-carousel").owlCarousel({
+      loop: true,
+      margin: 5,
+      nav: false,
+      rtl: true,
+      responsive: {
+        200: {
+          items: 1,
+        },
+        400: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        800: {
+          items: 2,
+        },
+        1200: {
+          items: 2.2,
+        },
+      },
+    });
+
+    $(".offers-finall .owl-carousel").owlCarousel({
+      loop: true,
+      margin: 5,
+      nav: false,
+      rtl: true,
+      margin: 50,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        400: {
+          items: 1.5,
+        },
+        600: {
+          items: 2.2,
+        },
+        800: {
+          items: 3,
+        },
+
+        1000: {
+          items: 3.4,
+        },
+        1100: {
+          items: 3.9,
+          items: 4,
+        },
+
+        1200: {
+          items: 4.5,
+        },
+          items: 5,
+        }
+    });
+  });
+
+
+
+});
 
 
 // =========================
