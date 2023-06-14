@@ -1,6 +1,4 @@
-$(document).ready(function () {
-  $('.jquery-background-video').bgVideo({fadeIn: 2000});
-})
+
 jQuery(document).ready(function() {
 
   jQuery(".c-slider-init").slick({
