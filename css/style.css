@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   direction: rtl;
   /* background: #020204; */
-  background-color: var(--secon-color) !important;
+  background-color: #FCFFFF !important;
   background-image: url('../images/bg-effect.svg') !important;
   /* background: url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg) !important; */
   animation: stars 90s linear;
@@ -115,7 +115,7 @@ video {
   outline: 0;
   vertical-align: middle;
   background: transparent;
-  color: #fff;
+  /* color: #fff; */
 }
 
 article,
@@ -546,6 +546,7 @@ header .video-hero--content {
   width: 60%;
   max-width: 960px;
 }
+
 .video-hero--content .form-group{
   position: relative;
 }
@@ -880,7 +881,9 @@ header .carousel-indicators {
    border-bottom: 0px;
 }
 
-
+.about .jquery-background-video-wrapper {
+  border-radius: 20px;
+}
 #about-us {
   padding: 60px 0;
   display: flex;
@@ -952,6 +955,7 @@ header .carousel-indicators {
   /* font-style: italic; */
   text-align: center;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .slid_about #graphics {
@@ -1173,7 +1177,7 @@ footer .footer-content li a{
   width: 120px;
 }
 .copyrights span{
-  color: #fff;
+  /* color: #fff; */
   font-size: small;
 }
 .router-link {
@@ -1214,37 +1218,40 @@ footer .footer-content li a{
   border-radius: 20px;
 }
 #ul-parent li{
-position: absolute;
-width: 80%;
-left: 10%;
-animation-name: slider;
-animation-duration: 20s;
-animation-iteration-count: infinite; 
-box-shadow: 1px 1px 13px #0000001c;
-border-radius: 15px;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  animation-name: slider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; 
+  box-shadow: 1px 1px 13px #0000001c;
+  border-radius: 15px;
+  background-color: #fff;
 }
 #ul-parent li:nth-child(1){
-transform: translateX(0);
-animation-delay: -20s;
+  transform: translateX(0);
+  animation-delay: -20s;
 }
 #ul-parent li:nth-child(2){
-transform: translateX(550px) translateZ(-300px) rotateY(30deg);
-animation-delay: -15S;
+  transform: translateX(550px) translateZ(-300px) rotateY(30deg);
+  animation-delay: -15S;
 }
 #ul-parent li:nth-child(3){
-transform:translateZ(-500px);
-animation-delay: -10S;
+  transform:translateZ(-500px);
+  animation-delay: -10S;
 }
 #ul-parent li:nth-child(4){
-transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
-animation-delay: -5S;
+  transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
+  animation-delay: -5S;
 }
 #ul-parent .card-title{
-  margin-top: 1rem !important;
+  margin-top: 2rem !important;
   color: #0050A3;
 }
 #ul-parent  p{
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  color: var(--gray-color);
+  padding-bottom: 2.5rem;
 }
 @keyframes slider{
 0%,20%{
@@ -1421,4 +1428,68 @@ div:nth-child(3n + 1) > img {
   height: 3px;
   background: transparent;
   box-shadow: 1756px 1879px #FFF, 110px 660px #FFF, 1687px 1244px #FFF, 508px 1028px #FFF, 1325px 762px #FFF, 1679px 1074px #FFF, 684px 951px #FFF, 672px 699px #FFF, 1676px 471px #FFF, 1092px 385px #FFF, 1484px 1326px #FFF, 751px 1704px #FFF, 775px 252px #FFF, 520px 1780px #FFF, 1453px 1498px #FFF, 1529px 297px #FFF, 584px 555px #FFF, 1021px 1096px #FFF, 654px 1836px #FFF, 931px 1550px #FFF, 1523px 534px #FFF, 991px 1044px #FFF, 672px 1927px #FFF, 1951px 991px #FFF, 341px 715px #FFF, 1009px 1010px #FFF, 49px 847px #FFF, 1551px 929px #FFF, 1388px 90px #FFF, 1944px 1781px #FFF, 844px 1060px #FFF, 1405px 1151px #FFF, 1435px 1697px #FFF, 832px 1403px #FFF, 1361px 1243px #FFF, 308px 1244px #FFF, 603px 1817px #FFF, 890px 544px #FFF, 1968px 1560px #FFF, 1109px 8px #FFF, 550px 714px #FFF, 1762px 626px #FFF, 1103px 105px #FFF, 1123px 364px #FFF, 120px 799px #FFF, 1674px 657px #FFF, 1616px 1717px #FFF, 1654px 6px #FFF, 512px 628px #FFF, 775px 1052px #FFF, 1434px 167px #FFF, 1374px 1046px #FFF, 667px 1685px #FFF, 595px 1619px #FFF, 1541px 1731px #FFF, 1366px 1858px #FFF, 1683px 1369px #FFF, 761px 1338px #FFF, 1297px 535px #FFF, 1406px 238px #FFF, 1656px 399px #FFF, 1139px 186px #FFF, 1713px 356px #FFF, 1134px 1943px #FFF, 1575px 1584px #FFF, 1394px 753px #FFF, 880px 713px #FFF, 360px 1556px #FFF, 405px 1175px #FFF, 587px 1560px #FFF, 158px 1187px #FFF, 1380px 697px #FFF, 790px 443px #FFF, 1570px 863px #FFF, 28px 667px #FFF, 893px 277px #FFF, 1619px 1129px #FFF, 846px 1164px #FFF, 1910px 1845px #FFF, 1486px 334px #FFF, 1427px 1853px #FFF, 219px 1192px #FFF, 147px 479px #FFF, 1141px 815px #FFF, 1894px 865px #FFF, 830px 452px #FFF, 923px 1557px #FFF, 827px 1499px #FFF, 1039px 355px #FFF, 97px 1566px #FFF, 1825px 1837px #FFF, 379px 275px #FFF, 1628px 1518px #FFF, 1662px 989px #FFF, 1590px 1044px #FFF, 780px 808px #FFF, 288px 539px #FFF, 1126px 156px #FFF, 1300px 1248px #FFF, 1897px 587px #FFF;
+}
+
+
+
+
+
+
+@media (max-width : 578px){
+  header .video-hero--content ,.about .video-hero--content{
+    width: 96% !important;
+    right: 2% !important;
+  }
+  header .video-hero--content .nav-pills {
+    width: 100% !important;
+  }
+  .jquery-background-video-pauseplay {
+    display: none;
+  }
+  header .carousel-indicators > span {
+    height: 1px;
+    width: 50px;
+  }
+  header .carousel-indicators {
+    transform: translate(-50%);
+    position: absolute;
+    right: unset;
+    top: 85%;
+    left: 50%;
+  }
+
+  header .carousel-indicators {
+    width: fit-content;
+    flex-direction: row;
+  }
+  .slider-img {
+    width: 100%;
+  }
+  .video-hero--content .form-group:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: #c2c2c2;
+    transform: translate(-50%);
+    left: 50%;
+    top: 65px;
+  }
+  .nice-select, .nice-select .list li {
+    text-align: right !important;
+    padding-right: 8px;
+    padding-left: 50px;
+    margin: 0.5rem 0;
+    background: transparent;
+  }
+  header .video-hero--content .tab-content .form-label {
+    margin: 0 !important;
+  }
+  header .video-hero--content h2 {
+    font-size: 24px;
+  }
+  header .video-hero--content p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 }

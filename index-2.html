@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owl carousel link  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- rateYo link  -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/nice-select.css">
+
+    <link rel="stylesheet" href="css/jquery.background-video.css">
+
+    <!-- animate link  -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style_ltr.css " /> -->
+
+    <style>
+      .jquery-background-video-pauseplay{
+        display: none;
+      }
+      .video-hero--content {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        right: 0;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        margin: 0;
+      }
+      .demo-video-wrapper {
+        background: #00000080;
+        height: 75vh;
+      }
+      .navigate{
+        margin-top: -100px;
+        display: flex;
+        gap: 20px;
+        z-index: 8907785;
+      }
+      .navigate-item{
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+      .navigate .navigate-item img{
+        object-fit: cover;
+        filter: brightness(0.4);
+      }
+      .navigate .navigate-item h5{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50% , -50%);
+        width: max-content;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- ============ navbar ============ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="" class="navbar-brand" width="100px">
+        </a>
+        <div class="">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>الرئيسية</li></a>
+              <a href="#"><li>من نحن ؟</li></a>
+              <a href="#"><li>الخدمات</li></a>
+              <a href="#"><li>المقالات</li></a>
+              <a href="#"><li>الأخبار</li></a>
+              <a href="#"><li>تواصل معنا</li></a>
+              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <a href="#"><li>تسجيل كمقدم خدمة</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on"></span>
+            <span class="off"></span>
+          </div>
+          <span>EN</span>
+        </div>
+      </div>
+    </nav>
+    <!-- ============ header ============ -->
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <span></span>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <span></span>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+              <video class="jquery-background-video" autoplay muted loop poster="images/vid.png">
+                <source src="images/Landmarks1.mp4" type="video/mp4">
+              </video>
+                <div class="video-overlay"></div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+              <video class="jquery-background-video" autoplay muted loop poster="images/vid.png">
+                <source src="images/Landmark2.mp4" type="video/mp4">
+              </video>
+                <div class="video-overlay"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+              <video class="jquery-background-video" autoplay muted loop poster="images/vid.png">
+                <source src="images/Landmarks3.mp4" type="video/mp4">
+              </video>
+                <div class="video-overlay"></div>
+            </div>
+          </div>
+          <div class="page-width">
+            <div class="container">
+              <div class="video-hero--content w-50 m-auto">
+                <h3 class="fw-bold mb-4">دعنا نذهب! المغامرة في انتظاركم</h3>
+                <p>احزم أمتعتك واختر وجهتك ، وسنوفر لك تذكرة الطيران وحجز الفندق وأفضل الأدلة</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="navigate">
+          <a href="#services" class="navigate-item">
+            <img src="images/nav1.png" alt="">
+            <h5>للتعرف على خدماتنا</h5>
+          </a>
+          <a href="#about" class="navigate-item">
+            <img src="images/nav2.png" alt="">
+            <h5>من نحن؟</h5>
+          </a>
+          <a href="#offers" class="navigate-item">
+            <img src="images/nav3.png" alt="">
+            <h5>عروضنا</h5>
+          </a>
+          <a href="#blogs" class="navigate-item">
+            <img src="images/nav4.png" alt="">
+            <h5>آخر مقالاتنا</h5>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h4 class="animate__animated animate__zoomIn animate__slow">خدمات الموقع</h4>
+        <p>خدمات مقترحة مقدمة لك</p>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" id="pills-rent-serv-tab" data-bs-toggle="pill" data-bs-target="#pills-rent-serv" type="button" role="tab" aria-controls="pills-rent-serv" aria-selected="true"> خدمات الأنشطة والتأجير</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-art-serv-tab" data-bs-toggle="pill" data-bs-target="#pills-art-serv" type="button" role="tab" aria-controls="pills-art-serv" aria-selected="false"> خدمات الفنون والترفيه</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-trans-serv-tab" data-bs-toggle="pill" data-bs-target="#pills-trans-serv" type="button" role="tab" aria-controls="pills-trans-serv" aria-selected="false">خدمات النقل والتخزين</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-food-serv-tab" data-bs-toggle="pill" data-bs-target="#pills-food-serv" type="button" role="tab" aria-controls="pills-food-serv" aria-selected="false">خدمات الإقامة والطعام</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-rent-serv" role="tabpanel" aria-labelledby="pills-rent-serv-tab">
+            <div class="row py-4">
+              <div class="col-md-6 col-lg-3">
+                  <a href="" class="service">
+                    <div class="icon">
+                        <img src="images/Jet-Ski-Rentals.png" alt="">
+                    </div>
+                    <div class="serv-name">
+                      تأجير الدراجات المائية ( بدون سائق )
+                    </div>
+                  </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/bicycles.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    إيجار الدراجات الهوائية
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/help.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير وتشغيل العربات والكراسي المتحركة
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/first.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير الدارجات النارية والكرفانات
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-100 text-center">
+              <a href="" class="blue-btn text-center">المزيد</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-art-serv" role="tabpanel" aria-labelledby="pills-art-serv-tab">
+            <div class="row py-4">
+              <div class="col-md-6 col-lg-3">
+                  <a href="" class="service">
+                    <div class="icon">
+                        <img src="images/Jet-Ski-Rentals.png" alt="">
+                    </div>
+                    <div class="serv-name">
+                      تأجير الدراجات المائية ( بدون سائق )
+                    </div>
+                  </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/bicycles.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    إيجار الدراجات الهوائية
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/help.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير وتشغيل العربات والكراسي المتحركة
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/first.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير الدارجات النارية والكرفانات
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-100 text-center">
+              <a href="" class="blue-btn text-center">المزيد</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-trans-serv" role="tabpanel" aria-labelledby="pills-trans-serv-tab">
+            <div class="row py-4">
+              <div class="col-md-6 col-lg-3">
+                  <a href="" class="service">
+                    <div class="icon">
+                        <img src="images/Jet-Ski-Rentals.png" alt="">
+                    </div>
+                    <div class="serv-name">
+                      تأجير الدراجات المائية ( بدون سائق )
+                    </div>
+                  </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/bicycles.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    إيجار الدراجات الهوائية
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/help.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير وتشغيل العربات والكراسي المتحركة
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/first.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير الدارجات النارية والكرفانات
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-100 text-center">
+              <a href="" class="blue-btn text-center">المزيد</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-food-serv" role="tabpanel" aria-labelledby="pills-food-serv-tab">
+            <div class="row py-4">
+              <div class="col-md-6 col-lg-3">
+                  <a href="" class="service">
+                    <div class="icon">
+                        <img src="images/Jet-Ski-Rentals.png" alt="">
+                    </div>
+                    <div class="serv-name">
+                      تأجير الدراجات المائية ( بدون سائق )
+                    </div>
+                  </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/bicycles.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    إيجار الدراجات الهوائية
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/help.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير وتشغيل العربات والكراسي المتحركة
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a href="" class="service">
+                  <div class="icon">
+                      <img src="images/first.png" alt="">
+                  </div>
+                  <div class="serv-name">
+                    تأجير الدارجات النارية والكرفانات
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-100 text-center">
+              <a href="" class="blue-btn text-center">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ about ============ -->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="about-content col-lg-6 ">
+          <h5 class="py-3">من نحن؟</h5>
+          <h3 class="m-0">
+            بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية
+          </h3>
+          <p class="py-3">
+            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطةهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد  
+          </p>
+          <div class="card-foot mt-3 ">
+            <a href="#" class="btn-more">المزيد </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="vid-wrapper">
+            <video src="images/Landmarks1.mp4" class="w-100" controls autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ about ============ -->
+    <section class="about">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-md-6">
+            <div class="vid-wrapper">
+              <video src="images/Landmarks1.mp4" class="w-100" controls autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5>سهل وسريع</h5>
+            <h3 class="w-75">احجز رحلتك القادمة في 3 خطوات سهلة</h3>
+            <div class="list">
+              <div class="icon">
+                <img src="images/Group.png" alt="">
+              </div>
+              <div class="p-2">
+                <h6>
+                  الرؤية
+                </h6>
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم </p>
+              </div>
+            </div>
+            <div class="list">
+              <div class="icon">
+                <img src="images/water-sport.png" alt="">
+              </div>
+              <div class="p-2">
+                <h6>
+                  الرؤية
+                </h6>
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم </p>
+              </div>
+            </div>
+            <div class="list">
+              <div class="icon">
+                <img src="images/taxi.png" alt="">
+              </div>
+              <div class="p-2">
+                <h6>
+                  الرؤية
+                </h6>
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ start Advertising ============ -->
+    <section class="Advertising ">
+      <div class="container">
+        <div class="Advertising-section">
+          <img src="./images/map.png"  class="d-xs-none">
+          <div class="Advertisting-overlay">
+            <div>
+              <h3 class="py-3">
+                مساحة اعلانية
+              </h3>
+              <p class=" m-auto ">يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول الطعام والأنشطة!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends" id="offers">
+      <div class="container">
+        <h4>الرائج حاليًا</h4>
+        <p>عروض مميزة مصممة لك</p>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="trend">
+              <img src="images/bicycles.png" alt="">
+              <div class="trend-body">
+                <div class="trend-serv">
+                  <img src="images/trend.png" alt="">
+                  <h6 >خدمة أنشطة تأجير</h6>
+                </div>
+                <h6>أنشطة المرشدين السياحيين</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ best ============ -->
+    <section class="best py-lg-5 py-md-2">
+      <div class="container">
+        <div class="best-section">
+          <div class="best-paragraph  mb-lg-0  mb-5" >
+            <h3>الأفضل في هذا الاسبوع</h3>
+            <p class="w-75 py-2 ps-4">يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول </p>
+            <div class="d-flex w-75 justify-content-around places">
+              <p><span class="d-block">+50</span> دوله</p>
+              <p><span class="d-block">+150</span> جولة</p>
+              <p><span class="d-block">+200</span> عميل</p>
+            </div>
+            <div class="card-foot mt-3">
+              <a href="#" class="btn-more">المزيد </a>
+            </div>
+          </div>
+          <div class="first-place  mb-lg-0 mb-5">
+            <div class="position-relative">
+              <img src="images/2.png" class="" alt="">
+              <div class="card-detail">
+                <p>اسم العرض</p>
+                <h4>
+                  2500ريال سعودي
+                </h5>
+                <div class="dayof">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  28 يوم إقامة
+                </div>
+              </div>
+            <button class="position-absolute top-100 start-100 ">
+              <i class="fa-solid fa-star"></i>
+              5.4
+            </button>
+            </div>
+            
+          </div>
+          <div class="second-place mb-lg-0 mb-5 ">
+            <div class="position-relative">
+            <img src="images/1.png" class="" alt="">
+            <div class="card-detail">
+              <p>اسم العرض</p>
+              <h4>
+                2500ريال سعودي
+              </h5>
+              <div class="dayof">
+                <i class="fa-solid fa-paper-plane"></i>
+                28 يوم إقامة
+              </div>
+            </div>
+            <button class="position-absolute top-100 start-100 ">
+              <i class="fa-solid fa-star"></i>
+              5.4
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Articles ============ -->
+    <section class="articles" id="blogs">
+      <div class="container">
+        <h2>المقالات</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-3" >
+            <div class="card m-auto">
+              <img
+                src="./images/firsting.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">مبادئ أساسية بشأن دور المحامين</h5>
+                <p class="card-text cut-text">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ
+                </p>
+                <a class=" link-more" href="/Singlearticles.html">
+                  <p class="">المزيد</p>
+                  <i class="bi fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3" >
+            <div class="card m-auto">
+              <img
+                src="./images/second.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title cut-text">مبادئ أساسية بشأن دور المحامين</h5>
+                <p class="card-text">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ
+                </p>
+                <a class=" link-more" href="/Singlearticles.html">
+                  <p class="">المزيد</p>
+                  <i class="bi fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3" >
+            <div class="card m-auto">
+              <img
+                src="./images/first.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">مبادئ أساسية بشأن دور المحامين</h5>
+                <p class="card-text cut-text">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ
+                </p>
+                <a class=" link-more" href="/Singlearticles.html">
+                  <p class="">المزيد</p>
+                  <i class="bi fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ client ============ -->
+    <section class="rev-client text-center">
+      <div class="container">
+        <h4 class="m-3 ">ماذا يقول عنا عملاؤنا ؟</h4>
+        <p class="text-center for-client my-md-4 my-sm-5 m-sm-0 m-sm-auto">بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية </p>
+        <div class="owl-carousel py-md-4 py-3" >
+          <div class="item">
+            <div class="card my-4">
+              <div class="card-body text-center">
+                <img src="./images/client2.png" alt="">
+                <h5>اسم المستخدم</h5>
+                <div class="Stars" style="--rating: 4"></div>
+              
+                <p class="card-text text-secondary">
+                  يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة                </p>
+              </div>
+              <img src="./images/quet.png" alt="" class="position-absolute top-0 end-0 translate-middle" style="width: 45px;">
+            </div>
+            
+          </div>
+          <div class="item">
+            <div class="card my-4">
+              <div class="card-body text-center">
+                <img src="./images/client2.png" alt="">
+                <h5>اسم المستخدم</h5>
+                <div class="Stars" style="--rating: 4"></div>
+              
+                <p class="card-text text-secondary">
+                  يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة                </p>
+              </div>
+              <img src="./images/quet.png" alt="" class="position-absolute top-0 end-0 translate-middle" style="width: 45px;">
+            </div>
+            
+          </div>
+          <div class="item">
+            <div class="card my-4">
+              <div class="card-body text-center">
+                <img src="./images/client2.png" alt="">
+                <h5>اسم المستخدم</h5>
+                <div class="Stars" style="--rating: 4"></div>
+              
+                <p class="card-text text-secondary">
+                  يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة يقع في قلب سوهو سكوير للاستمتاع بالعروض الحية والعديد من خيارات تناول والأنشطة                </p>
+              </div>
+              <img src="./images/quet.png" alt="" class="position-absolute top-0 end-0 translate-middle" style="width: 45px;">
+            </div>
+            
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h5>شركاء نجاحنا</h5>
+        <p>بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية</p>
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/partner2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ footer ============ -->
+    <section class="send-email">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-11 col-lg-8 mb-4 mb-lg-0">
+              <div class="send-data">
+                <h5 class="mb-3">
+                  القائمة البريدية
+                </h5>
+                <p>تواصل معنا ليصلك جديدنا</p>
+                <input class="form-control" type="text" placeholder="البريد الإلكتروني">
+                <button>المزيد</button>
+              </div>
+            </div>
+        </div>
+        <div class="smile">
+          <i class="fa-solid fa-face-laugh-beam"></i>
+        </div>
+        <div class="smile smile2">
+          <i class="fa-solid fa-face-grin"></i>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-content">
+        <button id="scroll-top"><i class="bi bi-chevron-double-up"></i></button>
+        <div class="links row gx-5 justify-content-center">
+          <div class="col-12 col-md-auto mb-5">
+            <div class="logo">
+              <img src="images/logo-footer.png" alt="">
+            </div>
+            <div class="social-media mt-3">
+              <div class="icon">
+                <a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <a aria-label="linkedin" href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-auto">
+            <h5>خريطة الموقع</h5>
+            <ul>
+              <li><a href="">الرئيسية</a></li>
+              <li><a href=""> من نحن</a></li>
+              <li><a href="">الخدمات </a></li>
+              <li><a href="">العروض</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-auto">
+            <h5>روابط أخرى</h5>
+            <ul>
+              <li><a href="">الأخبار</a></li>
+              <li><a href="">المدونة</a></li>
+              <li><a href=""> المعرض</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-auto">
+            <h5>روابط المساعدة</h5>
+            <ul>
+              <li><a href="">سياسة الخصوصية</a></li>
+              <li><a href="">الشروط والأحكام</a></li>
+              <li><a href=""> الأسئلة الشائعة</a></li>
+              <li><a href="">تواصل معنا</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <a href="https://smartvision4p.com" target="_blank">
+            <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
+            <img src="images/smart-logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+    
+    <!-- fancyBox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- rateYo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/jquery.background-video.js"></script>
+
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- font awesome script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" 
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
