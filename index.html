@@ -38,6 +38,7 @@
 
 
     <link rel="stylesheet" href="css/jquery.background-video.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
@@ -65,10 +66,10 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <a href="#"><li>الرئيسية</li></a>
-              <a href="#"><li>من نحن ؟</li></a>
+              <a href="index.html"><li>الرئيسية</li></a>
+              <a href="about.html"><li>من نحن ؟</li></a>
               <a href="#"><li>الخدمات</li></a>
-              <a href="#"><li>المقالات</li></a>
+              <a href="blog.html"><li>المقالات</li></a>
               <a href="#"><li>الأخبار</li></a>
               <a href="#"><li>تواصل معنا</li></a>
               <a href="#"><li>تسجيل كمستخدم</li></a>
@@ -566,6 +567,12 @@
       </div>
     </section>
 
+    <section class="location">
+      <div id="map"></div>
+      <br>
+      <button id="fly">Fly</button>
+    </section>
+
     <!-- ============ footer ============ -->
     <footer>
       <div class="container footer-content">
@@ -596,8 +603,8 @@
           <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay="0s">
             <h5>خريطة الموقع</h5>
             <ul>
-              <li><a href="">الرئيسية</a></li>
-              <li><a href=""> من نحن</a></li>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html"> من نحن</a></li>
               <li><a href="">الخدمات </a></li>
               <li><a href="">العروض</a></li>
             </ul>
@@ -606,7 +613,7 @@
             <h5>روابط أخرى</h5>
             <ul>
               <li><a href="">الأخبار</a></li>
-              <li><a href="">المدونة</a></li>
+              <li><a href="blog.html">المدونة</a></li>
               <li><a href=""> المعرض</a></li>
             </ul>
           </div>
@@ -652,6 +659,8 @@
     <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
 
     <script src="js/jquery.background-video.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    
     
 
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>

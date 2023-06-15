@@ -1808,11 +1808,11 @@ body, .content, .slides, .slide {
 @-webkit-keyframes zoomOut {
   0% {
     -webkit-transform: translate(0px);
-            transform: translate(0px);
+    transform: translate(0px);
   }
   100% {
     -webkit-transform: translate(100px);
-            transform: translate(100px);
+    transform: translate(100px);
   }
 }
 
