@@ -514,6 +514,14 @@
     <script src="js/script.js"></script>
 
     <script>
+
+$(function () {
+    $('html, body').animate({ scrollTop: window.screen.height *4 }, 600);
+    setTimeout(function(){
+        window.location.replace("./index.html");
+    }, 6000);
+});
+
         gsap.registerPlugin(ScrollTrigger);
 let speed = 100;
 

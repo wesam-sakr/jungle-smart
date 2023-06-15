@@ -1,5 +1,6 @@
 
 jQuery(document).ready(function() {
+  $('select').niceSelect()
 
   jQuery(".c-slider-init").slick({
     dots: false,
