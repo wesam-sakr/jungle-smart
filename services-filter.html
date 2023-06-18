@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owl carousel link  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- rateYo link  -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/nice-select.css">
+
+    <!-- animate link  -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+    <link rel="stylesheet" href="css/jquery.background-video.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+
+    <link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style_ltr.css " /> -->
+
+  </head>
+
+  <body>
+
+    <!-- ============ navbar ============ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="" class="navbar-brand" width="100px">
+        </a>
+        <div class="">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>الرئيسية</li></a>
+              <a href="about.html"><li>من نحن ؟</li></a>
+              <a href="services.html"><li>الخدمات</li></a>
+              <a href="blog.html"><li>المقالات</li></a>
+              <a href="#"><li>الأخبار</li></a>
+              <a href="#"><li>تواصل معنا</li></a>
+              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <a href="#"><li>تسجيل كمقدم خدمة</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on"></span>
+            <span class="off"></span>
+          </div>
+          <span>EN</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= breadcrumb ======= -->
+    <div class="container">
+        <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
+          <h3 class="text-end wow animate__fadeInDown">الخدمات</h3>
+          <ol class="breadcrumb wow animate__fadeInLeft">
+            <li class="breadcrumb-item">
+              <a href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="services.html">الخدمات</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">اسم الخدمة</li>
+          </ol>
+        </section>
+    </div>
+
+    <section class="best-servs">
+      <h4>نحن نقدم أفضل الخدمات</h4>
+      <p>بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية</p>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-3">
+            <h5 class="filter-title">
+              الخدمات الرئيسية
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  أنشطة التأجير
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault12">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  الفنون والترفيه
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  النقل والتخزين
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  الإقامة والطعام
+                </label>
+              </div>  
+            </form>
+            <h5 class="filter-title">
+              الخدمات الفرعية
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault11">
+                <label class="form-check-label" for="flexRadioDefault11">
+                  تأجير الدراجات المائية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault122">
+                <label class="form-check-label" for="flexRadioDefault22">
+                  إيجار الدراجات الهوائية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault77">
+                <label class="form-check-label" for="flexRadioDefault77">
+                  تنظيم رحلات سياحية
+                </label>
+              </div>
+            </form>
+            <h5 class="filter-title">
+              ترتيب حسب
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate33">
+                <label class="form-check-label" for="rate33">
+                  الأكثر تقييمًا
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate66">
+                <label class="form-check-label" for="rate66">
+                  الأكثر مشاهدة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate88">
+                <label class="form-check-label" for="rate88">
+                  المضاف حديثًا
+                </label>
+              </div>
+
+            </form>
+            <h5 class="filter-title">
+              الدولة
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country1">
+                <label class="form-check-label" for="country3">
+                  السعودية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country2">
+                <label class="form-check-label" for="country2">
+                  مصر
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country3">
+                <label class="form-check-label" for="country3">
+                  اليمن
+                </label>
+              </div>
+
+            </form>
+            <h5 class="filter-title">
+              المدينة
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city1">
+                <label class="form-check-label" for="city3">
+                  جدة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city2">
+                <label class="form-check-label" for="city2">
+                  الرياض
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city3">
+                <label class="form-check-label" for="city3">
+                  مكة
+                </label>
+              </div>
+
+            </form>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="serv-card">
+                  <div class="serv-img">
+                    <img src="images/bicycles.png" alt="">
+                    <div class="serv-card-hover">
+                      <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="single-serv.html" class="serv-name">
+                    <h6>تأجير دراجة</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ footer ============ -->
+    <footer>
+      <div class="container footer-content">
+        <button id="scroll-top"><i class="bi bi-chevron-double-up"></i></button>
+        <div class="links row gx-5 justify-content-evenly">
+          <div class="col-12 mb-5">
+            <div class="logo text-center">
+              <img src="images/logo-footer.png" class="wow animate__fadeInRightBig" data-wow-duration="1s" alt="">
+            </div>
+            <div class="social-media mt-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+              <div class="icon">
+                <a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <a aria-label="linkedin" href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8" target="_blank" class="router-link">
+                </a>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay="0s">
+            <h5>خريطة الموقع</h5>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html"> من نحن</a></li>
+              <li><a href="services.html">الخدمات </a></li>
+              <li><a href="">العروض</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".3s">
+            <h5>روابط أخرى</h5>
+            <ul>
+              <li><a href="">الأخبار</a></li>
+              <li><a href="blog.html">المدونة</a></li>
+              <li><a href=""> المعرض</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".6s">
+            <h5>روابط المساعدة</h5>
+            <ul>
+              <li><a href="">سياسة الخصوصية</a></li>
+              <li><a href="">الشروط والأحكام</a></li>
+              <li><a href=""> الأسئلة الشائعة</a></li>
+              <li><a href="">تواصل معنا</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <a href="https://smartvision4p.com" target="_blank">
+            <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
+            <img src="images/smart-logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  
+    <!-- jQuery script -->
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+    
+    <!-- fancyBox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- rateYo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
+
+    <script src="js/jquery.background-video.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- font awesome script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" 
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.jquery-background-video').bgVideo({fadeIn: 2000});
+        var navbar = document.getElementsByTagName("nav");
+        var sticky = navbar[0].offsetHeight ;
+
+        // make nav bar static on scroll 
+        window.addEventListener("scroll" , function(){
+          if (this.document.documentElement.scrollTop >= sticky) {
+            $(navbar).css("background" , "#fff");
+          } else {
+            $(navbar).css("background" , "transparent");
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

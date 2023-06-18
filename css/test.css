@@ -1,237 +1,45 @@
-
-.slider {
-
-    background: #FDFFFD;
-    position: relative;
-    min-height: 100vh;
-
+* {
+  margin: 0;
+  height: 100%
 }
-.slider-img {
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 30px 0;
-    text-align: center;
+.parallax {
+  width: 100%;
+  height: 500px;
 }
-#ul-parent {
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    /*transform-origin: 40% 0;*/
-
+.img1 {
+   background:   url('https://images.unsplash.com/photo-1682695794816-7b9da18ed470?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkwOTJ8&ixlib=rb-4.0.3&q=85');
+  height: 100%;
 }
-#ul-parent img{
-    border-radius: 20px;
+.img2 {
+  background: url('https://images.unsplash.com/photo-1682530016961-19763e9599b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkyOTJ8&ixlib=rb-4.0.3&q=85');
+  height: 100%;
 }
-#ul-parent li{
-	position: absolute;
-	width: 80%;
-	animation-name: slider;
-	animation-duration: 20s;
-	animation-iteration-count: infinite; 
+.img3 {
+  background: url('https://images.unsplash.com/photo-1683526513573-1effdda48dcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkzMzB8&ixlib=rb-4.0.3&q=85');
+  height: 100%;
 }
-#ul-parent li:nth-child(1){
-	transform: translateX(0);
-	animation-delay: -20s;
+.img4 {
+  background: url('https://images.unsplash.com/photo-1681958758179-207ff9bd9362?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkzNzB8&ixlib=rb-4.0.3&q=85');
+  height: 100%;
 }
-#ul-parent li:nth-child(2){
-	transform: translateX(550px) translateZ(-300px) rotateY(30deg);
-	animation-delay: -15S;
+.img5 {
+  background: url('https://images.unsplash.com/photo-1684093025281-f6d8511a1477?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkzNzB8&ixlib=rb-4.0.3&q=85');
+  height: 100%;
 }
-#ul-parent li:nth-child(3){
-	transform:translateZ(-500px);
-	animation-delay: -10S;
+.img1, .img2, .img3, .img4, .img5 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /*fixed: parallax - scroll: regular scrolling*/
 }
-#ul-parent li:nth-child(4){
-	transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
-	animation-delay: -5S;
+span {
+  top: 30%;
+  margin-left: 35%;
+  padding: 50px;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
 }
-@keyframes slider{
-	0%,20%{
-		transform: translateX(0);
-	}
-	25%,45%{
-		transform: translateX(550px) translateZ(-300px) rotateY(30deg);
-	}
-	50%,70%{
-		transform: translateZ(-500px)
-	}
-	75%,95%{
-		transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
-	}
-	97%{
-		transform: translateX(-550px) translateZ(-300px) rotateY(-30deg) translateX(-400);	
-	}
-	100%{
-		transform: translateX(0);
-
-	}
-}
-
-.first-about {
-    min-height: 60vh;
-    position: relative;
-    background-image: url("https://s19.postimg.cc/m4koqzwar/background-header.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px;
-  }
-  #intro-text {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 70px;
-  }
-  
-  #intro-text * {
-    text-align: center;
-  }
-  
-  #intro-text h1 {
-    margin-bottom: 30px;
-  }
-  
-  #intro-text h1 #first-part {
-    font-weight: 100;
-  }
-  
-  #intro-text h3 {
-    font-style: italic;
-    text-shadow: 2px 2px 10px white;
-  }
-  
-  
-  
-  #about-us {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #about-us .about-item {
-    width: 30%;
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  #about-us .about-item h2 {
-    font-style: italic;
-    font-weight: 900;
-    font-size: 1.4em;
-  }
-  
-  #about-us .about-item .bi {
-    font-size: 2.5em;
-    border: 3px solid rgb(205, 127, 50);
-    border-radius: 100%;
-    padding: 30px;
-    color: rgb(205, 127, 50);
-    width: 106px;
-  }
-  
-  .about .list .icon_img{
-    background: #0050A3;
-    width: 70px;
-    height: 70px;
-    border-radius: 10px;
-    padding: 15px;
-    margin: auto;
-    
-  }
- 
-.slid_about {
-    padding: 0 30px 30px 60px;
-    min-width: 60vh;
-    background-image: url("https://s19.postimg.cc/6j3d71cmr/moon.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .slid_about #additional-info {
-    width: 35%;
-    min-height: 45vh;
-    padding: 20px;
-    margin-bottom: 50px;
-    border-bottom: 3px solid rgb(205, 127, 50);
-    border-right: 3px solid rgb(205, 127, 50);
-    border-left: 2px solid rgb(205, 127, 50);
-    background-color: rgba(79, 88, 102, 0.5);
-    color: white;
-    text-align: center;
-    margin-right: auto;
-  }
-  .slid_about #additional-info .carousel-caption{
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .slid_about h2, .slid_about h4 {
-    font-style: italic;
-  }
-  
-  .slid_about #graphics {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .slid_about #graphics div:first-child {
-    margin-right: 10px;
-  }
-  
-  .slid_about #graphics div {
-    background-color: orange;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    color: rgb(91, 98, 109);
-    font-weight: bold;
-  }
-  
-  
-  .slid_about #contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .slid_about #contacts #copyright {
-    color: white;
-    margin-right: 10px;
-  }
-  
-  .slid_about #contacts #copyright span {
-    color: orange;
-    text-transform: uppercase;
-  }
-  
-  .slid_about #contacts #social-media a {
-    font-size: 1.5em;
-    margin-right: 15px;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 100%;
-  }
-  
-  .slid_about #contacts #social-media #fb {
-    color: #3b5998;
-    border: 2px solid #3b5998;
-  }
-  
-  .slid_about #contacts #social-media #twitter {
-    color: #1DA1F2;
-    border: 2px solid #1DA1F2;
-  }
-  
-  .slid_about #contacts #social-media #insta {
-    color: #8a3ab9;
-    border: 2px solid #8a3ab9;
-  }
-  

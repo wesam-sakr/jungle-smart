@@ -148,45 +148,45 @@
               <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab" tabindex="0">
                 <div class="data">
                   <form action="">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#servCountry" class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
                         تأجير الدراجات المائية
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+                      <label class="form-check-label" for="flexRadioDefault2">
                         إيجار الدراجات الهوائية
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                      <label class="form-check-label" for="flexRadioDefault3">
                         تأجير وتشغيل العربات والكراسي المتحركة
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                      <label class="form-check-label" for="flexRadioDefault4">
                         تأجير الدراجات النارية والكرفانات
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                      <label class="form-check-label" for="flexRadioDefault5">
                         أنشطة وكالات السياحة والسفر
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                      <label class="form-check-label" for="flexRadioDefault6">
                         تنظيم رحلات سياحية
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                      <label class="form-check-label" for="flexRadioDefault7">
                         أشطة الأدلاء السياحيين
                       </label>
                     </div>
@@ -237,7 +237,7 @@
             <ul>
               <li><a href="index.html">الرئيسية</a></li>
               <li><a href="about.html"> من نحن</a></li>
-              <li><a href="">الخدمات </a></li>
+              <li><a href="services.html">الخدمات </a></li>
               <li><a href="">العروض</a></li>
             </ul>
           </div>
@@ -270,13 +270,47 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="servCountry" tabindex="-1" aria-labelledby="servCountryLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="title text-center">
+              <span>مرحبًا بك</span>
+              <h5 class="my-3">تسجيل كمقدم خدمة</h2>
+            </div>
+            <div class="form-group">
+              <label for="serv" class="form-label">اختر الدولة</label>
+              <select aria-label="Default select example">
+                <option selected>السعودية</option>
+                <option value="1">مصر</option>
+                <option value="2">اليمن</option>
+                <option value="3">باكستان</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="serv" class="form-label">اختر المدينة</label>
+              <select aria-label="Default select example">
+                <option selected>جدة</option>
+                <option value="1">مكة</option>
+                <option value="2">الرياض</option>
+              </select>
+            </div>
+          </div>
+          <a href="services-filter.html" class="btn filter-btn">تصفية</a>
+        </div>
+      </div>
+    </div>
 
+
+    <!-- jQuery script -->
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- owl carousel script -->
     <script src="js/owl.carousel.min.js"></script>
     
@@ -287,15 +321,12 @@
     <script src="js/jquery.rateyo.min.js"></script>
 
     <script src="js/jquery.nice-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
 
     <script src="js/jquery.background-video.js"></script>
-    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
-
-
     <!-- wow script -->
     <script src="js/wow.min.js"></script>
 

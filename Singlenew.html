@@ -8,7 +8,6 @@
 
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
-    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,46 +16,55 @@
       referrerpolicy="no-referrer"
     />
     <!-- Bootstrap link  -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- owl carousel link  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
     <!-- rateYo link  -->
-    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
 
     <!-- fancyBox link  -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/nice-select.css" />
 
     <!-- animate link  -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
+    <link rel="stylesheet" href="css/jquery.background-video.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
 
-    <link rel="stylesheet" href="css/jquery.background-video.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-
-    <link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
-
+    <link
+      rel="stylesheet"
+      href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css"
+    />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/style_ltr.css " /> -->
-
   </head>
 
   <body>
- 
     <!-- ============ navbar ============ -->
     <nav>
       <div class="container">
         <a href="index.html">
-          <img src="images/logo.svg" alt="" class="navbar-brand" width="100px">
+          <img
+            src="images/logo.svg"
+            alt=""
+            class="navbar-brand"
+            width="100px"
+          />
         </a>
         <div class="">
           <div id="menuToggle">
@@ -67,7 +75,7 @@
             <ul id="menu">
               <a href="index.html"><li>الرئيسية</li></a>
               <a href="about.html"><li>من نحن ؟</li></a>
-              <a href="services.html"><li>الخدمات</li></a>
+              <a href="#"><li>الخدمات</li></a>
               <a href="blog.html"><li>المقالات</li></a>
               <a href="#"><li>الأخبار</li></a>
               <a href="#"><li>تواصل معنا</li></a>
@@ -78,7 +86,11 @@
         </div>
         <div class="lang">
           <div class="switch">
-            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
             <label for="language-toggle"></label>
             <span class="on"></span>
             <span class="off"></span>
@@ -90,86 +102,42 @@
 
     <!-- ======= breadcrumb ======= -->
     <div class="container">
-
-        <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
-              <h3 class="text-end wow animate__fadeInDown">المقالات </h3>
-            <ol class="breadcrumb wow animate__fadeInLeft">
-              <li class="breadcrumb-item">
-                <a href="index.html">الصفحة الرئيسية</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">المقالات </li>
-            </ol>
-        </section>
+      <section
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="nav-breadcrumb"
+      >
+        <h3 class="text-end wow animate__fadeInDown">الاخبار</h3>
+        <ol class="breadcrumb wow animate__fadeInLeft">
+          <li class="breadcrumb-item">
+            <a href="in">الصفحة الرئيسية</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">الاخبار</li>
+        </ol>
+      </section>
     </div>
-
-    <section class="articles pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-3" >
-            <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="0">
-              <img
-                src="./images/firsting.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">مبادئ أساسية بشأن دور المحامين</h5>
-                <p class="card-text">
-                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                  سيلهي القارئ
-                </p>
-                <a class="link-blog" href="/Singlearticles.html">
-                  <p class="">المزيد</p>
-                  
-                  <i class="bi fa-solid fa-arrow-left"></i>
-                </a>
+  <!-- ======= articles  ======= -->
+  <section class="singlearticles pb-5 mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="detail-articles wow animate__fadeInRight" data-wow-delay="0">
+            <h2 class="fw-bold ">اسم الخبر يكتب هنا   </h2>
+              <img src="images/firsting.png" alt="" class="baner">
+                
+              <div class="text-art">
+                  <p>
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+                  </p>
               </div>
-            </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="0.2s">
-              <img
-                src="./images/first.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">مبادئ أساسية بشأن دور المحامين</h5>
-                <p class="card-text">
-                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                  سيلهي القارئ
-                </p>
-                <a class="link-blog" href="/Singlearticles.html">
-                  <p class="">المزيد</p>
-                  <i class="bi fa-solid fa-arrow-left"></i>
+        
+        </div>
+        <div class="col-lg-4">
+          <div class="articles pb-5 pt-md-0 pt-2">
+            <h4 class=" article-as me-3">أخبار مشابهة </h4>
 
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="0.7s">
-              <img
-                src="./images/second.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">مبادئ أساسية بشأن دور المحامين</h5>
-                <p class="card-text">
-                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                  سيلهي القارئ
-                </p>
-                <a class="link-blog" href="/Singlearticles.html">
-                  <p class="">المزيد</p>
-                  <i class="bi fa-solid fa-arrow-left"></i>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-3" >
-              <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="0.9s">
+            <div class="card m-auto mb-3 wow animate__fadeInLeft" data-wow-delay="0">
                 <img
                   src="./images/firsting.png"
                   class="card-img-top"
@@ -188,11 +156,9 @@
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="1.1s">
+              <div class="card m-auto mb-3 wow animate__fadeInLeft" data-wow-delay="0.2s">
                 <img
-                  src="./images/first.png"
+                  src="./images/firsting.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -204,16 +170,14 @@
                   </p>
                   <a class="link-blog" href="/Singlearticles.html">
                     <p class="">المزيد</p>
+                    
                     <i class="bi fa-solid fa-arrow-left"></i>
-    
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="card m-auto wow animate__fadeInTopRight " data-wow-delay="1.5s">
+              <div class="card m-auto mb-3 wow animate__fadeInLeft" data-wow-delay="0.5s">
                 <img
-                  src="./images/second.png"
+                  src="./images/firsting.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -225,17 +189,18 @@
                   </p>
                   <a class="link-blog" href="/Singlearticles.html">
                     <p class="">المزيد</p>
+                    
                     <i class="bi fa-solid fa-arrow-left"></i>
-    
                   </a>
                 </div>
               </div>
-            </div>
-        
+         
+          </div>
         </div>
       </div>
+    </div>
   </section>
-
+    
     <!-- ============ footer ============ -->
     <footer>
       <div class="container footer-content">
@@ -243,36 +208,68 @@
         <div class="links row gx-5 justify-content-evenly">
           <div class="col-12 mb-5">
             <div class="logo text-center">
-              <img src="images/logo-footer.png" class="wow animate__fadeInRightBig" data-wow-duration="1s" alt="">
+              <img
+                src="images/logo-footer.png"
+                class="wow animate__fadeInRightBig"
+                data-wow-duration="1s"
+                alt=""
+              />
             </div>
-            <div class="social-media mt-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+            <div
+              class="social-media mt-3 wow animate__fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".2s"
+            >
               <div class="icon">
-                <a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="router-link">
+                <a
+                  aria-label="facebook"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="router-link"
+                >
                 </a>
                 <i class="fa-brands fa-facebook-f"></i>
               </div>
               <div class="icon">
-                <a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="router-link">
+                <a
+                  aria-label="twitter"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  class="router-link"
+                >
                 </a>
                 <i class="fa-brands fa-twitter"></i>
               </div>
               <div class="icon">
-                <a aria-label="linkedin" href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8" target="_blank" class="router-link">
+                <a
+                  aria-label="linkedin"
+                  href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8"
+                  target="_blank"
+                  class="router-link"
+                >
                 </a>
                 <i class="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay="0s">
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
             <h5>خريطة الموقع</h5>
             <ul>
               <li><a href="">الرئيسية</a></li>
               <li><a href="about.html"> من نحن</a></li>
-              <li><a href="services.html">الخدمات </a></li>
+              <li><a href="">الخدمات </a></li>
               <li><a href="">العروض</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".3s">
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay=".3s"
+          >
             <h5>روابط أخرى</h5>
             <ul>
               <li><a href="">الأخبار</a></li>
@@ -280,7 +277,11 @@
               <li><a href=""> المعرض</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".6s">
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay=".6s"
+          >
             <h5>روابط المساعدة</h5>
             <ul>
               <li><a href="">سياسة الخصوصية</a></li>
@@ -295,7 +296,7 @@
         <div class="container">
           <a href="https://smartvision4p.com" target="_blank">
             <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
-            <img src="images/smart-logo.png" alt="">
+            <img src="images/smart-logo.png" alt="" />
           </a>
         </div>
       </div>
@@ -309,7 +310,7 @@
 
     <!-- owl carousel script -->
     <script src="js/owl.carousel.min.js"></script>
-    
+
     <!-- fancyBox script -->
     <script src="js/jquery.fancybox.min.js"></script>
 
@@ -321,16 +322,15 @@
     <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
 
     <script src="js/jquery.background-video.js"></script>
-    
 
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
-
 
     <!-- wow script -->
     <script src="js/wow.min.js"></script>
 
     <!-- font awesome script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
       integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -341,20 +341,19 @@
 
     <script>
       $(document).ready(function () {
-        $('.jquery-background-video').bgVideo({fadeIn: 2000});
+        $(".jquery-background-video").bgVideo({ fadeIn: 2000 });
         var navbar = document.getElementsByTagName("nav");
-        var sticky = navbar[0].offsetHeight ;
+        var sticky = navbar[0].offsetHeight;
 
-        // make nav bar static on scroll 
-        window.addEventListener("scroll" , function(){
+        // make nav bar static on scroll
+        window.addEventListener("scroll", function () {
           if (this.document.documentElement.scrollTop >= sticky) {
-            $(navbar).css("background" , "#fff");
+            $(navbar).css("background", "#fff");
           } else {
-            $(navbar).css("background" , "transparent");
+            $(navbar).css("background", "transparent");
           }
-        })
-      })
+        });
+      });
     </script>
-    
   </body>
 </html>
