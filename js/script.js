@@ -1,8 +1,108 @@
 $(document).ready(function () {
   $('select').niceSelect();
   $('.jquery-background-video').bgVideo({fadeIn: 2000});
-
   
+  // sev
+  /*--------------------
+  Vars
+  --------------------*/
+  let progress = 50
+  let startX = 0
+  let active = 0
+  let isDown = false
+
+  /*--------------------
+  Contants
+  --------------------*/
+  const speedWheel = 0.02
+  const speedDrag = -0.1
+
+  /*--------------------
+  Get Z
+  --------------------*/
+  const getZindex = (array, index) => (array.map((_, i) => (index === i) ? array.length : array.length - Math.abs(index - i)))
+
+  /*--------------------
+  Items
+  --------------------*/
+  const $items = document.querySelectorAll('.services .serv-item')
+  const $cursors = document.querySelectorAll('.services .cursor')
+
+  const displayItems = (item, index, active) => {
+    // console.log(item);
+    const zIndex = getZindex([...$items], active)[index]
+    item.style.setProperty('--zIndex', zIndex)
+    item.style.setProperty('--active', (index-active)/$items.length)
+    console.log(window.getComputedStyle(item).getPropertyValue('transform'))
+  }
+
+  /*--------------------
+  Animate
+  --------------------*/
+  const animate = () => {
+    progress = Math.max(0, Math.min(progress, 100))
+    active = Math.floor(progress/100*($items.length-1))
+    
+    $items.forEach((item, index) => displayItems(item, index, active))
+  }
+  animate()
+
+  /*--------------------
+  Click on Items
+  --------------------*/
+  $items.forEach((item, i) => {
+    item.addEventListener('click', () => {
+      console.log(i);
+      progress = (i/$items.length) * 100 + 10
+      animate()
+    })
+  })
+
+  /*--------------------
+  Handlers
+  --------------------*/
+  const handleWheel = e => {
+    const wheelProgress = e.deltaY * speedWheel
+    progress = progress + wheelProgress
+    animate()
+  }
+
+  const handleMouseMove = (e) => {
+    if (e.type === 'mousemove') {
+      $cursors.forEach(($cursor) => {
+        $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+      })
+    }
+    if (!isDown) return
+    const x = e.clientX || (e.touches && e.touches[0].clientX) || 0
+    const mouseProgress = (x - startX) * speedDrag
+    progress = progress + mouseProgress
+    startX = x
+    animate()
+  }
+
+  const handleMouseDown = e => {
+    isDown = true
+    startX = e.clientX || (e.touches && e.touches[0].clientX) || 0
+  }
+
+  const handleMouseUp = () => {
+    isDown = false
+  }
+
+  /*--------------------
+  Listeners
+  --------------------*/
+  document.addEventListener('mousewheel', handleWheel)
+  document.addEventListener('mousedown', handleMouseDown)
+  document.addEventListener('mousemove', handleMouseMove)
+  document.addEventListener('mouseup', handleMouseUp)
+  document.addEventListener('touchstart', handleMouseDown)
+  document.addEventListener('touchmove', handleMouseMove)
+  document.addEventListener('touchend', handleMouseUp)
+  // --------
+
+  // map
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZWRrZiIsImEiOiJjamM2b2U4bDcwMm1tMndvNzI5dHQ1eTJtIn0.Ri6t-PZg3i5wivNlLehzVg';
   // These options control the camera position after animation
   const start = {
@@ -56,173 +156,47 @@ $(document).ready(function () {
           duration: 9000, // Animate over 12 seconds
           essential: false // This animation is considered essential with
           //respect to prefers-reduced-motion
-      });
   });
-
-
+  // ------
   //loader
-  $(document).ready(function () {
   setTimeout(function () {$(".loader").fadeOut(1000);})
-    $('.partners .owl-carousel').owlCarousel({
-      center: true,
-      loop: true,
-      nav: true,
-      rtl: true,
-      margin: 10,
-      items: 6,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        600: {
-          items: 3,
-        },
-        900: {
-          items: 4,
-        },
-        1000: {
-          items: 6,
-        },
+
+  // carousel
+  $('.partners .owl-carousel').owlCarousel({
+    center: true,
+    loop: true,
+    nav: true,
+    rtl: true,
+    margin: 10,
+    items: 6,
+    responsive: {
+      0: {
+        items: 2,
       },
-    });
-    $(".rev-client .owl-carousel").owlCarousel({
-      loop: true,
-      nav: true,
-      rtl: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1,
-        }
-      }
-    });
-    $(".carousel-compare.owl-carousel").owlCarousel({
-      loop: true,
-      margin: 5,
-      nav: false,
-      rtl: true,
-      responsive: {
-        200: {
-          items: 1,
-        },
-        400: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        800: {
-          items: 2,
-        },
-        1200: {
-          items: 2.2,
-        },
+      600: {
+        items: 3,
       },
-    });
-
-    $(".offers-finall .owl-carousel").owlCarousel({
-      loop: true,
-      margin: 5,
-      nav: false,
-      rtl: true,
-      margin: 50,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        400: {
-          items: 1.5,
-        },
-        600: {
-          items: 2.2,
-        },
-        800: {
-          items: 3,
-        },
-
-        1000: {
-          items: 3.4,
-        },
-        1100: {
-          items: 3.9,
-          items: 4,
-        },
-
-        1200: {
-          items: 4.5,
-        },
-          items: 5,
-        }
-    });
-  });
-
-
-
-});
-
-jQuery(document).ready(function() {
-  
-  jQuery(".c-slider-init").slick({
-    dots: false,
-    nav: false,
-    rtl:true,
-    arrows: false,
-    infinite: true,
-    // speed: 1200,
-    autoplaySpeed: 1000,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    draggable: true,
-    pauseOnFocus: true,
-    pauseOnHover: true
-  });
-
-  jQuery(".slick-current").addClass("initialAnimation");
-
-  let transitionSetup = {
-    target: ".slick-list",
-    enterClass: "u-scale-out",
-    doTransition: function() {
-      var slideContainer = document.querySelector(this.target);
-      slideContainer.classList.add(this.enterClass);
-      jQuery(".slick-current").removeClass("animateIn");
+      900: {
+        items: 4,
+      },
+      1000: {
+        items: 6,
+      },
     },
-    exitTransition: function() {
-      var slideContainer = document.querySelector(this.target);
-      setTimeout(() => {
-        slideContainer.classList.remove(this.enterClass);
-        jQuery(".slick-current").addClass("animateIn");
-      }, 2000);
-    }
-  };
-
-  var i = 0;
-  // On before slide change
-  jQuery(".c-slider-init").on("beforeChange", function(
-                              event,
-                               slick,
-                               currentSlide,
-                               nextSlide
-                              ) {
-    if (i == 0) {
-      event.preventDefault();
-      transitionSetup.doTransition();
-      i++;
-    } else {
-      i = 0;
-      transitionSetup.exitTransition();
-    }
-
-    jQuery(".c-slider-init").slick("slickNext");
-    jQuery(".slick-current").removeClass("initialAnimation");
   });
+  $(".rev-client .owl-carousel").owlCarousel({
+    loop: true,
+    nav: true,
+    rtl: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      }
+    }
+  });
+  });
+  // =========================
   new WOW().init();
 });
-
-
-
-// =========================
-
-

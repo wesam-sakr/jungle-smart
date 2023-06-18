@@ -91,92 +91,116 @@
     <!-- ======= breadcrumb ======= -->
     <div class="container">
         <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
-          <h3 class="text-end wow animate__fadeInDown">من نحن؟</h3>
+          <h3 class="text-end wow animate__fadeInDown">الخدمات</h3>
           <ol class="breadcrumb wow animate__fadeInLeft">
             <li class="breadcrumb-item">
               <a href="index.html">الصفحة الرئيسية</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">من نحن؟</li>
+            <li class="breadcrumb-item active" aria-current="page">الخدمات</li>
           </ol>
         </section>
     </div>
 
-    <section class="about mt-0">
+    <section class="best-servs">
+      <h4>نحن نقدم أفضل الخدمات</h4>
+      <p>بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية</p>
       <div class="container">
-        <section class="position-relative">
-          <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
-            <video class="jquery-background-video" autoplay muted loop poster="images/vid.png">
-              <source src="images/Landmark2.mp4" type="video/mp4">
-            </video>
-              <div class="video-overlay"></div>
+        <div class="row justify-content-between">
+          <div class="col-lg-3">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-support-tab" data-bs-toggle="pill" data-bs-target="#v-pills-support" type="button" role="tab" aria-controls="v-pills-support" aria-selected="true">
+                <div class="best-serv">
+                  <div class="serv-icon">
+                    <img src="images/power-supply 1.png" alt="" style="width: 50px;">
+                  </div>
+                  <h6>الخدمات الإدارية وخدمات الدعم</h6>
+                </div>
+              </button>
+              <button class="nav-link" id="v-pills-art-tab" data-bs-toggle="pill" data-bs-target="#v-pills-art" type="button" role="tab" aria-controls="v-pills-art" aria-selected="false">
+                <div class="best-serv">
+                  <div class="serv-icon">
+                    <img src="images/mic.png" alt="" style="width: 40px;">
+                  </div>
+                  <h6>الفنون والترفيه والتسلية</h6>
+                </div>
+              </button>
+              <button class="nav-link" id="v-pills-trans-tab" data-bs-toggle="pill" data-bs-target="#v-pills-trans" type="button" role="tab" aria-controls="v-pills-trans" aria-selected="false">
+                <div class="best-serv">
+                  <div class="serv-icon">
+                    <img src="images/trans.png" alt="" style="width: 80px;">
+                  </div>
+                  <h6> النقل والتخزين</h6>
+                </div>
+              </button>
+              <button class="nav-link" id="v-pills-food-tab" data-bs-toggle="pill" data-bs-target="#v-pills-food" type="button" role="tab" aria-controls="v-pills-food" aria-selected="false">
+                <div class="best-serv">
+                  <div class="serv-icon">
+                    <img src="images/satellite-dish.png" alt="" style="width: 50px;">
+                  </div>
+                  <h6>خدمات الإقامة والطعام</h6>
+                </div>
+              </button>
+              <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
+            </div>
           </div>
-          <div class="page-width">
-            <div class="container">
-              <div class="video-hero--content w-50 m-auto">
-                <h3 class="fw-bold mb-4 wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay=".1s">من نحن</h3>
-                <p class=" wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay=".2s">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام</p>
-                <a href="http://"> المزيد</a>
+          <div class="col h-100">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab" tabindex="0">
+                <div class="data">
+                  <form action="">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        تأجير الدراجات المائية
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        إيجار الدراجات الهوائية
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        تأجير وتشغيل العربات والكراسي المتحركة
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        تأجير الدراجات النارية والكرفانات
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        أنشطة وكالات السياحة والسفر
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        تنظيم رحلات سياحية
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        أشطة الأدلاء السياحيين
+                      </label>
+                    </div>
+                     
+                  </form>
+
                 </div>
               </div>
+              <div class="tab-pane fade" id="v-pills-art" role="tabpanel" aria-labelledby="v-pills-art-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-trans" role="tabpanel" aria-labelledby="v-pills-trans-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab" tabindex="0">...</div>
+            </div>
           </div>
-        </section>
-      </div>
-      <!-- <section class="first-about mt-0">
-     
-          <div id="intro-text">
-            <h1>
-              <span id="first-part"> من نحن ؟</span> 
-           
-            </h1>
-            <h3 class="py-3 ">
-              بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية
-            </h3>
-          </div>
-        </section> -->
-        <div id="about-us">
-         
-          <div class="about-item wow animate__backInDown" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="list">
-                  <div class="icon_img">
-                    <img src="images/Group.png" alt="">
-                  </div>
-                
-                </div>
-                <div class="p-2">
-                  <h5 class="my-3">
-                    الرؤية
-                  </h5>
-                  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على  </p>
-                </div>
-          </div>
-          <div class="about-item wow animate__backInDown" data-wow-duration="2s" data-wow-delay=".3s">
-              <div class="list">
-                  <div class="icon_img">
-                      <img src="images/water-sport.png" alt="">
-                  </div>
-                
-                </div>
-                <div class="p-2">
-                  <h5 class="my-3">
-                    الرسالة
-                  </h5>
-                  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على  </p>
-                </div>
-          </div>
-          <div class="about-item wow animate__backInDown"data-wow-duration="2s" data-wow-delay=".5s">
-              <div class="list">
-                  <div class="icon_img">
-                      <img src="images/taxi.png" alt="">
-                  </div>
-                
-                </div>
-                <div class="p-2">
-                  <h5 class="my-3">
-                    الهدف
-                  </h5>
-                  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على  </p>
-                </div>
-          </div>
+        </div>
       </div>
     </section>
 
@@ -213,7 +237,7 @@
             <ul>
               <li><a href="index.html">الرئيسية</a></li>
               <li><a href="about.html"> من نحن</a></li>
-              <li><a href="services.html">الخدمات </a></li>
+              <li><a href="">الخدمات </a></li>
               <li><a href="">العروض</a></li>
             </ul>
           </div>
