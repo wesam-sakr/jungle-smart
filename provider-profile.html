@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- owl carousel link  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- rateYo link  -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- animate link  -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/jquery.background-video.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile-style.css">
+    <!-- <link rel="stylesheet" href="css/style_ltr.css " /> -->
+  </head>
+
+  <body>
+    <!-- ============ navbar ============ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="images/logo.svg"
+            alt=""
+            class="navbar-brand"
+            width="100px"
+          />
+        </a>
+        <div class="">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>الرئيسية</li></a>
+              <a href="about.html"><li>من نحن ؟</li></a>
+              <a href="services.html"><li>الخدمات</li></a>
+              <a href="blog.html"><li>المقالات</li></a>
+              <a href="news.html"><li>الأخبار</li></a>
+              <a href="contactUs.html"><li>تواصل معنا</li></a>
+              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <a href="#"><li>تسجيل كمقدم خدمة</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span class="on"></span>
+            <span class="off"></span>
+          </div>
+          <span>EN</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= breadcrumb ======= -->
+    <div class="container">
+      <section
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="nav-breadcrumb"
+      >
+        <h3 class="text-end wow animate__fadeInDown">مقدم الخدمة</h3>
+        <ol class="breadcrumb wow animate__fadeInLeft">
+          <li class="breadcrumb-item">
+            <a href="in">الصفحة الرئيسية</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">مقدم الخدمة</li>
+        </ol>
+      </section>
+    </div>
+
+
+    <!------------- profile -------------->
+<section class="profile py-5">
+  <div class="container">
+      <div class="row d-flex justify-content-between align-items-start">
+
+          <!-- profile nav-sm -->
+          <div class="profile-nav-sm rounded-3">
+            <p class="m-0">الملف الشخصي</p>
+            <img src="images/Group 67653.png" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="">
+            <!-- nav-items -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <!-- title -->
+                <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <!-- المعلومات الشخصية -->
+                  <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info" aria-selected="true">المعلومات الشخصيه
+                      <i class="bi bi-person"></i>
+                  </button>
+    
+                  <!-- العنوان -->
+                  <button class="nav-link" id="v-pills-addr-tab" data-bs-toggle="pill" data-bs-target="#v-pills-addr" type="button" role="tab" aria-controls="v-pills-addr" aria-selected="false">العنوان
+                      <i class="bi bi-geo-alt"></i>
+                  </button>
+    
+                  <!-- المفضلة -->
+                  <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav" type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
+                      <i class="bi bi-heart"></i>
+                  </button>
+    
+                  <!-- المشتريات -->
+                  <button class="nav-link" id="v-pills-Purchases-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Purchases" type="button" role="tab" aria-controls="v-pills-Purchases" aria-selected="false">المشتريات
+                      <i class="bi bi-cart3"></i>
+                  </button>
+    
+                  <!-- تتبع الشحنة -->
+                  <button class="nav-link" id="v-pills-trace-tab" data-bs-toggle="pill" data-bs-target="#v-pills-trace" type="button" role="tab" aria-controls="v-pills-trace" aria-selected="false">تتبع الشحنة
+                      <i class="bi bi-truck"></i>
+                  </button>
+              </div>
+              <!--profile log out button -->
+              <div class="d-grid gap-2">
+                  <button class="log-out btn btn-primary mt-1" type="button">تسجيل الخروج
+                  </button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- profile nav-lg col -->
+          <div class="profile-nav col col-md-5 col-lg-3">
+              <!-- profile title -->
+              <div class="personal-title rounded-3 text-center">
+                  الملف الشخصي
+              </div>
+              <!-- profile nav -->
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <!-- المعلومات الشخصية -->
+                  <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info" aria-selected="true">المعلومات الشخصيه
+                      <i class="bi bi-person"></i>
+                  </button>
+    
+                  <!-- العنوان -->
+                  <button class="nav-link" id="v-pills-addr-tab" data-bs-toggle="pill" data-bs-target="#v-pills-addr" type="button" role="tab" aria-controls="v-pills-addr" aria-selected="false">العنوان
+                      <i class="bi bi-geo-alt"></i>
+                  </button>
+    
+                  <!-- المفضلة -->
+                  <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav" type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
+                      <i class="bi bi-heart"></i>
+                  </button>
+    
+                  <!-- المشتريات -->
+                  <button class="nav-link" id="v-pills-Purchases-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Purchases" type="button" role="tab" aria-controls="v-pills-Purchases" aria-selected="false">المشتريات
+                      <i class="bi bi-cart3"></i>
+                  </button>
+    
+                  <!-- تتبع الشحنة -->
+                  <button class="nav-link" id="v-pills-trace-tab" data-bs-toggle="pill" data-bs-target="#v-pills-trace" type="button" role="tab" aria-controls="v-pills-trace" aria-selected="false">تتبع الشحنة
+                      <i class="bi bi-truck"></i>
+                  </button>
+              </div>
+              <!--profile log out button -->
+              <div class="d-grid gap-2">
+                  <button class="log-out btn btn-primary mt-1" type="button">تسجيل الخروج
+                  </button>
+              </div>
+          </div>
+
+          <!-- profile data col -->
+          <div class="profile-data col col-md-7 col-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                  <!-- المعلومات الشخصية -->
+                  <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+                    <form action="">
+                        <!-- profile-picture -->
+                        <div class="profile-pic position-relative bg-light">
+                          <img class="w-100 h-100" src="images/Component 83 – 2.png" alt="" id="photo">
+                          <div class="profile-pic-icon">
+                              <i class="bi bi-camera-fill"></i>
+                          </div>
+                          <input type="file" id="file" name="profile-pic" accept="image/*">
+                        </div>
+                        <div class="row gy-3">
+                            <!-- الاسم -->
+                            <div class="col-12 col-lg-6">
+                                <p>الاسم</p>
+                                <div class="position-relative">
+                                  <input class="personal-profile-data" type="text">
+                                  <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <!-- البريد الالكتروني -->
+                            <div class="col-12 col-lg-6">
+                                <p>البريد الالكتروني</p>
+                                <div class="position-relative">
+                                  <input class="personal-profile-data" type="text">
+                                  <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <!-- رقم الجوال -->
+                            <div class="col-12 col-lg-6">
+                                <p>رقم الجوال</p>
+                                <div class="position-relative">
+                                  <input class="personal-profile-data" type="text">
+                                  <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <!-- الرقم السري -->
+                            <div class="col-12 col-lg-6">
+                                <p>الرقم السري</p>
+                                <div class="position-relative">
+                                  <input class="personal-profile-data" type="text">
+                                  <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn personal-profile-data rounded mt-5">حفظ</button>
+
+                    </form>
+                  </div>
+    
+                  <!-- العنوان -->
+                  <div class="tab-pane fade" id="v-pills-addr" role="tabpanel" aria-labelledby="v-pills-addr-tab">
+                    <!-- form addr -->
+                      <form action="">
+                          <!-- profile-addr -->
+                          <div class="profile-addr bg-light position-relative p-3 mb-5 rounded-3">
+                            <div class="user-addr">
+                              <input type="radio" class="ms-2" name="personal-addr" value="addr" checked>
+                              <label for="html" class="text-muted w-75">البيت شارع الكوثر - الرياض - شقة 19 - عمارة 30 -الطابق الخامس</label>
+                            </div>
+                            <i class="bi bi-pencil-fill "></i>
+                          </div>
+                          <div class="row gy-4">
+                              <!-- العنوان -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>العنوان</p>
+                                  <input class="personal-profile-data" type="text">
+                              </div>
+                              <!-- المدينة -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>المدينة</p>
+                                  <select class="personal-profile-data" aria-label="اختر المدينة">
+                                      <option selected="" disabled=""></option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                              </div>
+                              <!-- الحي -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>الحي</p>
+                                  <input class="personal-profile-data" type="text">
+                              </div>
+                              <!-- العمارة -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>العمارة</p>
+                                  <input class="personal-profile-data" type="text">
+                              </div>
+
+                              <!-- الطابق -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>الطابق</p>
+                                  <input class="personal-profile-data" type="text">
+                              </div>
+
+                              <!-- الشقة -->
+                              <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                  <p>الشقة</p>
+                                  <input class="personal-profile-data" type="text">
+                              </div>
+                          </div>
+                          <button type="button" class="btn personal-profile-data rounded mt-5">اضافة عنوان</button>
+                      </form>
+                  </div>
+    
+                  <!-- المفضلة -->
+                  <div class="tab-pane fade" id="v-pills-fav" role="tabpanel" aria-labelledby="v-pills-fav-tab">
+                    <!-- products section -->
+                    <section class="products">
+                      <div class="row gy-3">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="card product-item mb-3" >
+                            <span class="new-padge">جديد</span>
+                            <a class="view-product" href="product-details.html"></a>
+                            <div class="position-relative">
+                              <img src="images/621-XX-K6-removebg-preview.png" alt="...">
+                              <div class="overlay-product-item">
+                                <a href=""><i class="bi bi-box-arrow-up"></i></a>
+                                <a href="product-details.html"><i class="bi bi-arrow-left"></i></a>
+                                <a href="javascript:void(0);" class="add-to-fav"><i class="bi bi-heart-fill"></i></a>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="product-title-rating">
+                                <h5 class="card-title">اسم المنتج يكتب هنا</h5> 
+                                <span class="product-rating"><i class="bi bi-star-fill"></i> 5</span>
+                              </div>
+                              <p class="card-text product-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                              <span class="product-price"><span>505</span> ريال </span>
+                            </div>
+                            <button href="#" class="btn add-to-cart">أضف إلى السلة</button>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="card product-item mb-3" >
+                            <span class="new-padge">جديد</span>
+                            <a class="view-product" href="product-details.html"></a>
+                            <div class="position-relative">
+                              <img src="images/621-XX-K6-removebg-preview.png" alt="...">
+                              <div class="overlay-product-item">
+                                <a href=""><i class="bi bi-box-arrow-up"></i></a>
+                                <a href="product-details.html"><i class="bi bi-arrow-left"></i></a>
+                                <a href="javascript:void(0);" class="add-to-fav"><i class="bi bi-heart-fill"></i></a>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="product-title-rating">
+                                <h5 class="card-title">اسم المنتج يكتب هنا</h5> 
+                                <span class="product-rating"><i class="bi bi-star-fill"></i> 5</span>
+                              </div>
+                              <p class="card-text product-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                              <span class="product-price"><span>505</span> ريال </span>
+                            </div>
+                            <button href="#" class="btn add-to-cart">أضف إلى السلة</button>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="card product-item mb-3" >
+                            <span class="new-padge">جديد</span>
+                            <a class="view-product" href="product-details.html"></a>
+                            <div class="position-relative">
+                              <img src="images/621-XX-K6-removebg-preview.png" alt="...">
+                              <div class="overlay-product-item">
+                                <a href=""><i class="bi bi-box-arrow-up"></i></a>
+                                <a href="product-details.html"><i class="bi bi-arrow-left"></i></a>
+                                <a href="javascript:void(0);" class="add-to-fav"><i class="bi bi-heart-fill"></i></a>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="product-title-rating">
+                                <h5 class="card-title">اسم المنتج يكتب هنا</h5> 
+                                <span class="product-rating"><i class="bi bi-star-fill"></i> 5</span>
+                              </div>
+                              <p class="card-text product-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                              <span class="product-price"><span>505</span> ريال </span>
+                            </div>
+                            <button href="#" class="btn add-to-cart">أضف إلى السلة</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </section>
+                    <!-- products section ends -->
+                  </div>
+                  
+                  <!-- المشتريات -->
+                  <div class="tab-pane fade" id="v-pills-Purchases" role="tabpanel" aria-labelledby="v-pills-Purchases-tab">
+                    <div class="row">
+                      <div class="col-12 mb-4">
+                        <div class="cart-product-item">
+                          <div class="col-3">
+                            <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
+                          </div>
+                          <div class="col-9">
+                            <div class="cart-product-name d-flex justify-content-between align-items-center">
+                              <h6>اسم المنتج يكتب هما</h6>
+                            </div>
+                            <p class="product-preview mb-4">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                            </p>
+                            <div class="product-info">
+                              <div class="product-quantity">
+                                <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                  <input type='text' name='quantity' value='1' class='qty' />
+                                <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                              </div>
+                              <div class="product-full-price">
+                                <span class="text-dark-blue px-2 px-md-3">الإجمالي</span>
+                                <span class="full-price px-2 px-md-3"><span>250</span> ريال</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <div class="cart-product-item">
+                          <div class="col-3">
+                            <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
+                          </div>
+                          <div class="col-9">
+                            <div class="cart-product-name d-flex justify-content-between align-items-center">
+                              <h6>اسم المنتج يكتب هما</h6>
+                            </div>
+                            <p class="product-preview mb-4">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                            </p>
+                            <div class="product-info">
+                              <div class="product-quantity">
+                                <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                  <input type='text' name='quantity' value='1' class='qty' />
+                                <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                              </div>
+                              <div class="product-full-price">
+                                <span class="text-dark-blue px-2 px-md-3">الإجمالي</span>
+                                <span class="full-price px-2 px-md-3"><span>250</span> ريال</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <div class="cart-product-item">
+                          <div class="col-3">
+                            <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
+                          </div>
+                          <div class="col-9">
+                            <div class="cart-product-name d-flex justify-content-between align-items-center">
+                              <h6>اسم المنتج يكتب هما</h6>
+                            </div>
+                            <p class="product-preview mb-4">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                            </p>
+                            <div class="product-info">
+                              <div class="product-quantity">
+                                <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                  <input type='text' name='quantity' value='1' class='qty' />
+                                <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                              </div>
+                              <div class="product-full-price">
+                                <span class="text-dark-blue px-2 px-md-3">الإجمالي</span>
+                                <span class="full-price px-2 px-md-3"><span>250</span> ريال</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <div class="cart-product-item">
+                          <div class="col-3">
+                            <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
+                          </div>
+                          <div class="col-9">
+                            <div class="cart-product-name d-flex justify-content-between align-items-center">
+                              <h6>اسم المنتج يكتب هما</h6>
+                            </div>
+                            <p class="product-preview mb-4">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                            </p>
+                            <div class="product-info">
+                              <div class="product-quantity">
+                                <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                  <input type='text' name='quantity' value='1' class='qty' />
+                                <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                              </div>
+                              <div class="product-full-price">
+                                <span class="text-dark-blue px-2 px-md-3">الإجمالي</span>
+                                <span class="full-price px-2 px-md-3"><span>250</span> ريال</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- تتبع الشحنة -->
+                  <div class="tab-pane fade" id="v-pills-trace" role="tabpanel" aria-labelledby="v-pills-trace-tab">
+                    <div class="Track-shipment mb-5">
+                      <div class="shipment-info">
+                        <ul>
+                          <li>
+                            <span>اسم الشحنة : </span>
+                            <span>اسم الشحنة يكتب هنا</span>
+                          </li>
+                          <li>
+                            <span>تاريخ الشحنة : </span>
+                            <span>5/5/2022</span>
+                          </li>
+                          <li>
+                            <span>التاريخ المتوقع للإستلام : </span>
+                            <span>5/5/2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="Track-shipment-wizard">
+                        <div class="steps-container">
+                          <div class="step step1 active">تأكيد الطلب</div>
+                          <div class="step">تحضير الطلب</div>
+                          <div class="step">في الطريق</div>
+                          <div class="step step4">تم الإستلام</div>
+                        </div>
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab-container">
+                          <div class="tab active">
+                            <img src="images/svgexport-7 (11).svg" alt="">
+                          </div>
+                          <div class="tab">
+                            <img src="images/svgexport-6 (34).svg" alt="">
+                          </div>
+                          <div class="tab">
+                            <img src="images/svgexport-6 (35).svg" alt="">
+                          </div>
+                          <div class="tab">
+                            <img src="images/svgexport-7 (12).svg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Track-shipment mb-5">
+                      <div class="shipment-info">
+                        <ul>
+                          <li>
+                            <span>اسم الشحنة : </span>
+                            <span>اسم الشحنة يكتب هنا</span>
+                          </li>
+                          <li>
+                            <span>تاريخ الشحنة : </span>
+                            <span>5/5/2022</span>
+                          </li>
+                          <li>
+                            <span>التاريخ المتوقع للإستلام : </span>
+                            <span>5/5/2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="Track-shipment-wizard">
+                        <div class="steps-container">
+                          <div class="step step1 finish">تأكيد الطلب</div>
+                          <div class="step finish">تحضير الطلب</div>
+                          <div class="step finish">في الطريق</div>
+                          <div class="step step4 finish">تم الإستلام</div>
+                        </div>
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab-container">
+                          <div class="tab finish">
+                            <img src="images/svgexport-7 (11).svg" alt="">
+                          </div>
+                          <div class="tab finish">
+                            <img src="images/svgexport-6 (34).svg" alt="">
+                          </div>
+                          <div class="tab finish">
+                            <img src="images/svgexport-6 (35).svg" alt="">
+                          </div>
+                          <div class="tab finish">
+                            <img src="images/svgexport-7 (12).svg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+    <!-- ============ footer ============ -->
+    <footer>
+      <div class="container footer-content">
+        <button id="scroll-top"><i class="bi bi-chevron-double-up"></i></button>
+        <div class="links row gx-5 justify-content-evenly">
+          <div class="col-12 mb-5">
+            <div class="logo text-center">
+              <img
+                src="images/logo-footer.png"
+                class="wow animate__fadeInRightBig"
+                data-wow-duration="1s"
+                alt=""
+              />
+            </div>
+            <div
+              class="social-media mt-3 wow animate__fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay=".2s"
+            >
+              <div class="icon">
+                <a
+                  aria-label="facebook"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="router-link"
+                >
+                </a>
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <a
+                  aria-label="twitter"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  class="router-link"
+                >
+                </a>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <a
+                  aria-label="linkedin"
+                  href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8"
+                  target="_blank"
+                  class="router-link"
+                >
+                </a>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
+            <h5>خريطة الموقع</h5>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html"> من نحن</a></li>
+              <li><a href="services.html">الخدمات </a></li>
+              <li><a href="offers.html">العروض</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay=".3s"
+          >
+            <h5>روابط أخرى</h5>
+            <ul>
+              <li><a href="news.html">الأخبار</a></li>
+              <li><a href="blog.html">المدونة</a></li>
+              <li><a href="gallery.html"> المعرض</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-6 col-md-auto wow animate__fadeInTopRight"
+            data-wow-duration="1s"
+            data-wow-delay=".6s"
+          >
+            <h5>روابط المساعدة</h5>
+            <ul>
+              <li><a href="">سياسة الخصوصية</a></li>
+              <li><a href="">الشروط والأحكام</a></li>
+              <li><a href=""> الأسئلة الشائعة</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <a href="https://smartvision4p.com" target="_blank">
+            <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
+            <img src="images/smart-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- fancyBox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- rateYo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
+
+    <script src="js/jquery.background-video.js"></script>
+
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- font awesome script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".jquery-background-video").bgVideo({ fadeIn: 2000 });
+        var navbar = document.getElementsByTagName("nav");
+        var sticky = navbar[0].offsetHeight;
+
+        // make nav bar static on scroll
+        window.addEventListener("scroll", function () {
+          if (this.document.documentElement.scrollTop >= sticky) {
+            $(navbar).css("background", "#fff");
+          } else {
+            $(navbar).css("background", "transparent");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

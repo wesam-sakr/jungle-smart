@@ -230,6 +230,22 @@ $(document).ready(function () {
     },
   });
 
+  //when we choose a pic to upload
+
+  const img = document.querySelector('#photo');
+  const file = document.querySelector('#file');
+
+  file.addEventListener('change', function(){
+    const choosedFile = this.files[0];
+    if (choosedFile) {
+        const reader = new FileReader(); 
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+        reader.readAsDataURL(choosedFile);
+    }
+  });
+
   
 });
   if($('.gallery-link').length>0){
