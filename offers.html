@@ -96,108 +96,279 @@
             <li class="breadcrumb-item">
               <a href="index.html">الصفحة الرئيسية</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">الخدمات</li>
+            <li class="breadcrumb-item">
+              <a href="services.html">الخدمات</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">اسم الخدمة</li>
           </ol>
         </section>
     </div>
 
     <section class="best-servs">
-      <h4>نحن نقدم أفضل الخدمات</h4>
-      <p>بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية</p>
+      <h4>عروض الخدمات</h4>
+      <p>خدمات مقترحة مقدمة لك</p>
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-lg-3">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-support-tab" data-bs-toggle="pill" data-bs-target="#v-pills-support" type="button" role="tab" aria-controls="v-pills-support" aria-selected="true">
-                <div class="best-serv">
-                  <div class="serv-icon">
-                    <img src="images/power-supply 1.png" alt="" style="width: 50px;">
-                  </div>
-                  <h6>الخدمات الإدارية وخدمات الدعم</h6>
-                </div>
-              </button>
-              <button class="nav-link" id="v-pills-art-tab" data-bs-toggle="pill" data-bs-target="#v-pills-art" type="button" role="tab" aria-controls="v-pills-art" aria-selected="false">
-                <div class="best-serv">
-                  <div class="serv-icon">
-                    <img src="images/mic.png" alt="" style="width: 40px;">
-                  </div>
-                  <h6>الفنون والترفيه والتسلية</h6>
-                </div>
-              </button>
-              <button class="nav-link" id="v-pills-trans-tab" data-bs-toggle="pill" data-bs-target="#v-pills-trans" type="button" role="tab" aria-controls="v-pills-trans" aria-selected="false">
-                <div class="best-serv">
-                  <div class="serv-icon">
-                    <img src="images/trans.png" alt="" style="width: 80px;">
-                  </div>
-                  <h6> النقل والتخزين</h6>
-                </div>
-              </button>
-              <button class="nav-link" id="v-pills-food-tab" data-bs-toggle="pill" data-bs-target="#v-pills-food" type="button" role="tab" aria-controls="v-pills-food" aria-selected="false">
-                <div class="best-serv">
-                  <div class="serv-icon">
-                    <img src="images/satellite-dish.png" alt="" style="width: 50px;">
-                  </div>
-                  <h6>خدمات الإقامة والطعام</h6>
-                </div>
-              </button>
-              <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
-            </div>
-          </div>
-          <div class="col h-100">
-            <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab" tabindex="0">
-                <div class="data">
-                  <form action="">
-                    <div type="button" data-bs-toggle="modal" data-bs-target="#servCountry" class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        تأجير الدراجات المائية
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        إيجار الدراجات الهوائية
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                      <label class="form-check-label" for="flexRadioDefault3">
-                        تأجير وتشغيل العربات والكراسي المتحركة
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                      <label class="form-check-label" for="flexRadioDefault4">
-                        تأجير الدراجات النارية والكرفانات
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                      <label class="form-check-label" for="flexRadioDefault5">
-                        أنشطة وكالات السياحة والسفر
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                      <label class="form-check-label" for="flexRadioDefault6">
-                        تنظيم رحلات سياحية
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
-                      <label class="form-check-label" for="flexRadioDefault7">
-                        أشطة الأدلاء السياحيين
-                      </label>
-                    </div>
-                     
-                  </form>
+          <div class="col-5 col-md-3">
+            <h5 class="filter-title">
+              الخدمات الرئيسية
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  أنشطة التأجير
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault12">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  الفنون والترفيه
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  النقل والتخزين
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="main-serv" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  الإقامة والطعام
+                </label>
+              </div>  
+            </form>
+            <h5 class="filter-title">
+              الخدمات الفرعية
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault11">
+                <label class="form-check-label" for="flexRadioDefault11">
+                  تأجير الدراجات المائية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault122">
+                <label class="form-check-label" for="flexRadioDefault22">
+                  إيجار الدراجات الهوائية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sub-serv" id="flexRadioDefault77">
+                <label class="form-check-label" for="flexRadioDefault77">
+                  تنظيم رحلات سياحية
+                </label>
+              </div>
+            </form>
+            <h5 class="filter-title">
+              ترتيب حسب
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate33">
+                <label class="form-check-label" for="rate33">
+                  الأكثر تقييمًا
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate66">
+                <label class="form-check-label" for="rate66">
+                  الأكثر مشاهدة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate-serv" id="rate88">
+                <label class="form-check-label" for="rate88">
+                  المضاف حديثًا
+                </label>
+              </div>
 
+            </form>
+            <h5 class="filter-title">
+              الدولة
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country1">
+                <label class="form-check-label" for="country3">
+                  السعودية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country2">
+                <label class="form-check-label" for="country2">
+                  مصر
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-country" id="country3">
+                <label class="form-check-label" for="country3">
+                  اليمن
+                </label>
+              </div>
+
+            </form>
+            <h5 class="filter-title">
+              المدينة
+            </h5>
+            <form action="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city1">
+                <label class="form-check-label" for="city3">
+                  جدة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city2">
+                <label class="form-check-label" for="city2">
+                  الرياض
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="serv-city" id="city3">
+                <label class="form-check-label" for="city3">
+                  مكة
+                </label>
+              </div>
+
+            </form>
+          </div>
+          <div class="col">
+            <div class="row gy-5">
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                    <img src="images/1.png" class="" alt="">
+                    <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                    </div>
+                    <button class="position-absolute top-100 start-100 ">
+                      <i class="fa-solid fa-star"></i>
+                      5.4
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="v-pills-art" role="tabpanel" aria-labelledby="v-pills-art-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-trans" role="tabpanel" aria-labelledby="v-pills-trans-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab" tabindex="0">...</div>
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                  <img src="images/1.png" class="" alt="">
+                  <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                  </div>
+                  <button class="position-absolute top-100 start-100 ">
+                    <i class="fa-solid fa-star"></i>
+                    5.4
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                  <img src="images/1.png" class="" alt="">
+                  <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                  </div>
+                  <button class="position-absolute top-100 start-100 ">
+                    <i class="fa-solid fa-star"></i>
+                    5.4
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                  <img src="images/1.png" class="" alt="">
+                  <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                  </div>
+                  <button class="position-absolute top-100 start-100 ">
+                    <i class="fa-solid fa-star"></i>
+                    5.4
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                  <img src="images/1.png" class="" alt="">
+                  <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                  </div>
+                  <button class="position-absolute top-100 start-100 ">
+                    <i class="fa-solid fa-star"></i>
+                    5.4
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="offer">
+                  <div class="position-relative">
+                    <a href="single-serv.html" class="link"></a>
+                  <img src="images/1.png" class="" alt="">
+                  <div class="card-detail">
+                    <p>اسم العرض</p>
+                    <h4>
+                      2500ريال سعودي
+                    </h5>
+                    <div class="dayof">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      28 يوم إقامة
+                    </div>
+                  </div>
+                  <button class="position-absolute top-100 start-100 ">
+                    <i class="fa-solid fa-star"></i>
+                    5.4
+                  </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -270,39 +441,7 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="servCountry" tabindex="-1" aria-labelledby="servCountryLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="title text-center">
-              <span>مرحبًا بك</span>
-              <h5 class="my-3">تسجيل كمقدم خدمة</h2>
-            </div>
-            <div class="form-group">
-              <label for="serv" class="form-label">اختر الدولة</label>
-              <select aria-label="Default select example">
-                <option selected>السعودية</option>
-                <option value="1">مصر</option>
-                <option value="2">اليمن</option>
-                <option value="3">باكستان</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="serv" class="form-label">اختر المدينة</label>
-              <select aria-label="Default select example">
-                <option selected>جدة</option>
-                <option value="1">مكة</option>
-                <option value="2">الرياض</option>
-              </select>
-            </div>
-          </div>
-          <a href="services-filter.html" class="btn filter-btn">تصفية</a>
-        </div>
-      </div>
-    </div>
-
-
+  
     <!-- jQuery script -->
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>

@@ -1215,7 +1215,52 @@ header .carousel-indicators {
   transition-duration: 0.7s;
 }
 
-
+/* ========== offers =========== */
+.offer {
+  position: relative;
+}
+.offer .card-detail{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 75%;
+  text-align: center;
+  background: hsla(0, 0%, 100%, 0.69);
+  border-radius: 20px;
+  /* height: 150px; */
+  display: grid;
+  place-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.offer .card-detail .dayof{
+  color: #6D6D6D;
+  font-size: 14px;
+}
+.offer .card-detail h4{
+  color: var(--main-color);
+  font-weight: 600;
+  padding: .85rem 0;
+}
+.offer .card-detail p{
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: unset;
+  width: max-content;
+}
+.offer button {
+  width: 55px;
+  height: 55px;
+  font-size: 14px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #078998;
+  border: none;
+  text-align: center;
+  transform: translate(-85px, -30px);
+}
 
 /* ========== location =========== */
 
@@ -2672,6 +2717,15 @@ color: var(--white);
  
 }
 @media (max-width: 575.98px) {
+  .offer .card-detail h4 {
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+  .offer img{
+    min-height: 170px;
+  }
   #about-us .about-item {
     width: 100%;
     
