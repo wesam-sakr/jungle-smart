@@ -187,25 +187,30 @@ $(document).ready(function () {
   //loader
   setTimeout(function () {$(".loader").fadeOut(1000);})
 
-    //when we choose a pic to upload
+  // toggle fav item
+  $(".serv-card-hover .icon").click(function () {
+    $(this).toggleClass("fav");
+    $(this).children('i:nth-child(1)').toggleClass("fa-regular fa-solid");
+    console.log($(this).children('svg:nth-child(1)'))
+  })
 
-    if($('#photo').length>0){
-      const img = document.querySelector('#photo');
-      const file = document.querySelector('#file');
-    
-      file.addEventListener('change', function(){
-        const choosedFile = this.files[0];
-        if (choosedFile) {
-            const reader = new FileReader(); 
-            reader.addEventListener('load', function(){
-                img.setAttribute('src', reader.result);
-            });
-            reader.readAsDataURL(choosedFile);
-        }
-      });
-    }
+  //when we choose a pic to upload
+  if($('#photo').length>0){
+    const img = document.querySelector('#photo');
+    const file = document.querySelector('#file');
   
-
+    file.addEventListener('change', function(){
+      const choosedFile = this.files[0];
+      if (choosedFile) {
+          const reader = new FileReader(); 
+          reader.addEventListener('load', function(){
+              img.setAttribute('src', reader.result);
+          });
+          reader.readAsDataURL(choosedFile);
+      }
+    });
+  }
+  
   // carousel
   $('.partners .owl-carousel').owlCarousel({
     center: true,

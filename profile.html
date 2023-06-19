@@ -112,61 +112,58 @@
   <!------------- profile -------------->
   <section class="profile py-5">
     <div class="container">
-      <div class="row d-flex justify-content-between align-items-start">
+      <!-- profile nav-sm -->
+      <div class="profile-nav-sm rounded-3">
+        <p class="m-0">الملف الشخصي</p>
+        <img src="images/Group 67653.png" class="btn w-auto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="">
+        <!-- nav-items -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <!-- title -->
+            <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <!-- المعلومات الشخصية -->
+              <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info"
+                aria-selected="true">
+                بياناتي
+              </button>
 
-        <!-- profile nav-sm -->
-        <div class="profile-nav-sm rounded-3">
-          <p class="m-0">الملف الشخصي</label>
-          <img src="images/Group 67653.png" class="btn" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="">
-          <!-- nav-items -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <!-- title -->
-              <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+              <!-- تعديل كلمة المرور -->
+              <button class="nav-link" id="v-pills-pass-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pass"
+                type="button" role="tab" aria-controls="v-pills-pass" aria-selected="false">تعديل كلمة المرور
+              </button>
+
+              <!-- المفضلة -->
+              <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav"
+                type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
+              </button>
+
+              <!-- المقارنة -->
+              <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare"
+                aria-selected="false">المقارنة
+              </button>
+
+              <!-- حجوزاتي -->
+              <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reservation"
+                type="button" role="tab" aria-controls="v-pills-reservation" aria-selected="false">حجوزاتي
+              </button>
             </div>
-            <div class="offcanvas-body">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <!-- المعلومات الشخصية -->
-                <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill"
-                  data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info"
-                  aria-selected="true">
-                  بياناتي
-                </button>
-
-                <!-- تعديل كلمة المرور -->
-                <button class="nav-link" id="v-pills-pass-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pass"
-                  type="button" role="tab" aria-controls="v-pills-pass" aria-selected="false">تعديل كلمة المرور
-                </button>
-
-                <!-- المفضلة -->
-                <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav"
-                  type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
-                </button>
-
-                <!-- المقارنة -->
-                <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill"
-                  data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare"
-                  aria-selected="false">المقارنة
-                </button>
-
-                <!-- حجوزاتي -->
-                <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reservation"
-                  type="button" role="tab" aria-controls="v-pills-reservation" aria-selected="false">حجوزاتي
-                </button>
-              </div>
-              <!--profile log out button -->
-              <div class="d-grid gap-2">
-                <button class="log-out btn btn-primary mt-1" type="button">تسجيل الخروج
-                </button>
-              </div>
+            <!--profile log out button -->
+            <div class="d-grid gap-2">
+              <button class="log-out btn btn-primary mt-1" type="button">تسجيل الخروج
+              </button>
             </div>
           </div>
         </div>
-
-
+      </div>
+      <div class="row d-flex justify-content-between align-items-start">
         <!-- profile nav-lg col -->
         <div class="profile-nav col col-md-5 col-lg-3">
           <!-- profile-picture -->
@@ -182,23 +179,19 @@
             <!-- المعلومات الشخصية -->
             <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info"
               type="button" role="tab" aria-controls="v-pills-info" aria-selected="true">بياناتي
-              <i class="bi bi-person"></i>
             </button>
             <!-- تعديل كلمة المرور -->
             <button class="nav-link" id="v-pills-pass-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pass"
               type="button" role="tab" aria-controls="v-pills-pass" aria-selected="false">تعديل كلمة المرور
-              <i class="bi bi-geo-alt"></i>
             </button>
             <!-- المفضلة -->
             <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav"
               type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
-              <i class="bi bi-heart"></i>
             </button>
             <!-- المقارنة -->
             <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill"
               data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare"
               aria-selected="false">المقارنة
-              <i class="bi bi-cart3"></i>
             </button>
             <!-- حجوزاتي -->
             <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reservation"
@@ -254,16 +247,189 @@
 
             <!-- المفضلة -->
             <div class="tab-pane fade" id="v-pills-fav" role="tabpanel" aria-labelledby="v-pills-fav-tab">
-              ...
+              <div class="best-servs">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="serv-card">
+                      <div class="serv-img">
+                        <img src="images/bicycles.png" alt="">
+                      </div>
+                      <div class="serv-card-hover">
+                        <a href="single-serv.html" class="serv-name">
+                          <h6>تأجير دراجة</h6>
+                        </a>
+                        <button class="icon fav">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="serv-card">
+                      <div class="serv-img">
+                        <img src="images/bicycles.png" alt="">
+                      </div>
+                      <div class="serv-card-hover">
+                        <a href="single-serv.html" class="serv-name">
+                          <h6>تأجير دراجة</h6>
+                        </a>
+                        <button class="icon fav">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="serv-card">
+                      <div class="serv-img">
+                        <img src="images/bicycles.png" alt="">
+                      </div>
+                      <div class="serv-card-hover">
+                        <a href="single-serv.html" class="serv-name">
+                          <h6>تأجير دراجة</h6>
+                        </a>
+                        <button class="icon fav">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="serv-card">
+                      <div class="serv-img">
+                        <img src="images/bicycles.png" alt="">
+                      </div>
+                      <div class="serv-card-hover">
+                        <a href="single-serv.html" class="serv-name">
+                          <h6>تأجير دراجة</h6>
+                        </a>
+                        <button class="icon fav">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- المقارنة -->
             <div class="tab-pane fade" id="v-pills-compare" role="tabpanel" aria-labelledby="v-pills-compare-tab">
-              ...
+              <div class="product-details compare-items py-5">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-12 col-lg-6">
+                    <div class="cart-product-item p-3">
+                      <h5 class="fw-bold">تأجير دراجة</h5>
+                      <img src="images/bicycles.png" alt="">
+                      <div class="col-12">
+                        <div class="cart-product-name mb-3">
+                          <button class="provider">
+                            <div class="user-product">
+                              <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <a role="button">
+                              إزالة من المقارنة
+                            </a>
+                          </button>
+                        </div>
+                        <div class="cart-product-name mb-3">
+                          <div class="Stars" style="--rating: 4">
+                            <small>530 تقييم</small>
+                          </div>
+                        </div>
+                        <ul>
+                          <li>
+                              <span> السعر للبالغين : </span>
+                              <span> 200 ريال سعودي</span>
+                          </li>
+                          <li>
+                              <span>السعر للأطفال: </span>
+                              <span> 200 ريال سعودي</span>
+                          </li>
+                        </ul>
+                        <div class="product-info">
+                          <a href="book-serv.html" class="add-to-cart">حجز</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="cart-product-item p-3">
+                      <h5 class="fw-bold">تأجير دراجة</h5>
+                      <img src="images/bicycles.png" alt="">
+                      <div class="col-12">
+                        <div class="cart-product-name mb-3">
+                          <button class="provider">
+                            <div class="user-product">
+                              <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <a role="button">
+                              إزالة من المقارنة
+                            </a>
+                          </button>
+                        </div>
+                        <div class="cart-product-name mb-3">
+                          <div class="Stars" style="--rating: 4">
+                            <small>530 تقييم</small>
+                          </div>
+                        </div>
+                        <ul>
+                          <li>
+                              <span> السعر للبالغين : </span>
+                              <span> 200 ريال سعودي</span>
+                          </li>
+                          <li>
+                              <span>السعر للأطفال: </span>
+                              <span> 200 ريال سعودي</span>
+                          </li>
+                        </ul>
+                        <div class="product-info">
+                          <a href="book-serv.html" class="add-to-cart">حجز</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- حجوزاتي -->
             <div class="tab-pane fade" id="v-pills-reservation" role="tabpanel" aria-labelledby="v-pills-reservation-tab">
-              ...
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr class="table-active">
+                      <th>
+                        صورة الخدمة
+                      </th>
+                      <th>
+                        اسم الخدمة
+                      </th>
+                      <th>
+                        تاريخ الطلب
+                      </th>
+                      <th>الإجمالي</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="images/bicycles.png" alt="">
+                      </td>
+                      <td>اسم الخدمة</td>
+                      <td>تاريخ الطلب</td>
+                      <td>الإجمالي</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/bicycles.png" alt="">
+                      </td>
+                      <td>اسم الخدمة</td>
+                      <td>تاريخ الطلب</td>
+                      <td>الإجمالي</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
