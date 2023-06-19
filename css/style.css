@@ -3094,6 +3094,7 @@ color: var(--white);
   color: var(--main-color);
   font-weight: bold;
   margin-bottom: 1.75rem;
+  text-align: center;
 }
 .profile .profile-data .provider-info p{
   color: #97A1AC;
