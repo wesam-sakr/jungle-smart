@@ -161,6 +161,15 @@ $(document).ready(function () {
     })
   }
   // ------
+  $(function () {
+    $("#your-rate").rateYo({
+      starWidth: "15px",
+      ratedFill: "#FFC107",
+      rating: 0,
+      fullStar: true,
+      rtl: true
+    });
+  })
   //loader
   setTimeout(function () {$(".loader").fadeOut(1000);})
 
