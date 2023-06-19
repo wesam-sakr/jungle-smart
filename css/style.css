@@ -2746,7 +2746,10 @@ color: var(--white);
     padding-right: 8px;
     padding-left: 50px;
     margin: 0.5rem 0;
-    background: transparent;
+    /* background: transparent; */
+  }
+  .description-comments .nav-pills .nav-link {
+    padding: 10px 35px;
   }
   header .video-hero--content .tab-content .form-label {
     margin: 0 !important;
