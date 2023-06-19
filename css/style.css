@@ -2751,6 +2751,14 @@ color: var(--white);
   .description-comments .nav-pills .nav-link {
     padding: 10px 35px;
   }
+  .best-servs .filter-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .best-servs .filter-title:before {
+    height: 40px;
+    width: 7px;
+  }
   header .video-hero--content .tab-content .form-label {
     margin: 0 !important;
   }
