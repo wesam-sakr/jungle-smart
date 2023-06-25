@@ -272,3 +272,4 @@ $(document).ready(function () {
   // =========================
   new WOW().init();
   // $('.multi-select').select2();
+  $('.multi-select').selectize();

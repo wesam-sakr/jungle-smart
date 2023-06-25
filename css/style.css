@@ -189,7 +189,7 @@ svg {
   width: 100%;
 }
 
-.nice-select {
+.nice-select , .selectize-control.multi .selectize-input.has-items{
   border: none;
 }
 .nice-select:after {
@@ -205,6 +205,12 @@ svg {
 .nice-select:after {
   right: unset;
   left: 12px;
+}
+.selectize-dropdown-content {
+  background: #fff;
+}
+.selectize-input:focus{
+  box-shadow: none;
 }
 
 .form-select:focus {
