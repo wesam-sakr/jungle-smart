@@ -29,8 +29,7 @@ body {
   direction: rtl;
   /* background: #020204; */
   background-color:#FCFFFF!important;
-  background-image: url('../images/bg-effect.svg') !important;
-  /* background: url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg) !important; */
+  /* background-image: url('../images/bg-effect.svg') !important; */
   animation: stars 90s linear infinite;
 }
 @keyframes stars {
@@ -1095,7 +1094,7 @@ header .carousel-indicators {
 }
 
 /* ========== serv =========== */
-.services{
+/* .services{
   position: relative;
 }
 .services .serv-carousel {
@@ -1219,6 +1218,150 @@ header .carousel-indicators {
 .services .cursor2 {
   --size: 2px;
   transition-duration: 0.7s;
+} */
+
+.popular-services {
+  box-sizing: content-box;
+  display: flex;
+  margin: 0 0 3rem 0;
+  position: relative;
+}
+.popular-header {
+  margin-top: 4rem;
+  flex: 0 0 250px;
+  margin-left: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  transform: translateY(-10px);
+  color: #fff;
+}
+.popular-header:before {
+  content: "";
+  background: linear-gradient(130deg,#078998,#0050A3 41.07%,#319197 76.05%);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  z-index: 1;
+  border-radius: 12px;
+}
+.popular-header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0050A3;
+  z-index: 2;
+  border-radius: 8px;
+}
+.popular-services:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  bottom: 3.6rem;
+  width: 5px;
+  border-radius: 5px;
+  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+  box-shadow: 10px 0 20px 3px #000;
+}
+.popular-header>* {
+  position: relative;
+  z-index: 3;
+}
+.mini-card-grid {
+  scrollbar-color: #666 #201c29;
+  scrollbar-gutter: always;
+  padding: 3rem 0 3rem 2rem;
+  margin: 0;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* display: grid; */
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  margin: 0 0 1.5rem;
+  position: relative;
+}
+.mini-card {
+  position: relative;
+  min-width: 300px;
+  min-height: 350px;
+  /* box-shadow: 2rem 0 3rem -2rem #000; */
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(85deg,#434343,#262626);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  overflow: hidden;
+}
+.mini-card:not(:last-child) {
+  margin-left: -130px;
+  box-shadow: 3rem 0px 2rem -2rem #000;;
+}
+.mini-card:focus-within~.mini-card,.mini-card:hover~.mini-card {
+  transform: translateX(-130px);
+}
+.mini-card .carousel-box{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.mini-card .carousel-box::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+}
+.mini-card .carousel-box .title{
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: 20px;
+  right: 20px;
+  font-size: clamp(20px, 3vw, 30px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+}
+.mini-card .carousel-box .title a{
+  color: #fff !important;
+}
+.mini-card .carousel-box .num {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  top: 10px;
+  right: 20px;
+  font-size: clamp(20px, 10vw, 80px);
+}
+.mini-card .carousel-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.mini-card:last-child:focus-within,.mini-card:last-child:hover {
+  transform: translate(0.5rem,-1rem) rotate(3deg);
+  z-index: 89078;
+}
+.mini-card:focus-within,.mini-card:hover {
+  transform: translateY(-1rem) rotate(3deg);
+  z-index: 89078;
 }
 
 /* ========== offers =========== */
@@ -2253,8 +2396,8 @@ footer .footer-content li a{
   color: #fff;
   text-align: center;
 }
-.login-box .user-box .form-control {
-  width: 100%;
+.login-box .user-box .form-control ,.select2-container {
+  width: 100% !important;
   padding: 10px 0;
   font-size: 16px;
   border: none;

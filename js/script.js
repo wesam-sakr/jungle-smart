@@ -94,7 +94,7 @@ $(document).ready(function () {
   /*--------------------
   Listeners
   --------------------*/
-  document.addEventListener('mousewheel', handleWheel)
+  // document.addEventListener('mousewheel', handleWheel)
   document.addEventListener('mousedown', handleMouseDown)
   document.addEventListener('mousemove', handleMouseMove)
   document.addEventListener('mouseup', handleMouseUp)
@@ -108,16 +108,16 @@ $(document).ready(function () {
     mapboxgl.accessToken = 'pk.eyJ1IjoiZWRrZiIsImEiOiJjamM2b2U4bDcwMm1tMndvNzI5dHQ1eTJtIn0.Ri6t-PZg3i5wivNlLehzVg';
     // These options control the camera position after animation
     const start = {
-        center: [-73.983970, 40.702710],
+        center: [41.741076, 25.123607],
         zoom: 2,
         pitch: 0,
         bearing: 0
     };
     const end = {
-        center: [-73.983970, 40.702710],
-        zoom: 12.5,
-        bearing: 0,
-        pitch: 0
+        center: [41.741076, 25.123607],
+        zoom: 6.5,
+        pitch: 0,
+        bearing: 0
     };
     const map = new mapboxgl.Map({
         container: 'map',
@@ -268,8 +268,15 @@ $(document).ready(function () {
     },
   });
   
+  $('.single-img .owl-carousel').owlCarousel({
+    loop: true,
+    rtl: true,
+    margin: 10,
+    items: 1,
+  });
+  
 });
   // =========================
   new WOW().init();
-  // $('.multi-select').select2();
-  $('.multi-select').selectize();
+  $('select.multi-select').select2();
+  // $('.multi-select').selectize();
