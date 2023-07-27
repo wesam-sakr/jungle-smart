@@ -18,6 +18,7 @@
       />
     <!-- Bootstrap link  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
 
     <!-- owl carousel link  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -39,10 +40,6 @@
       />
 
     <link rel="stylesheet" href="css/jquery.background-video.css" />
-    <link
-      rel="stylesheet"
-      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
-      />
 
     <link
       rel="stylesheet"
@@ -63,7 +60,73 @@
 
   <body>
     <!-- ============ navbar ============ -->
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light top-0">
+      <div class="container">
+        <a class="navbar-brand m-0" href="index.html"><img class="ms-2"
+            src="images/logo.svg" width="30px" alt="">
+        </a>
+        <div class="collapse navbar-collapse justify-content-between
+          align-items-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">من نحن</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="activities.html">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="m-0 d-flex align-items-center" style="gap:10px">
+          <li class="nav-item">
+            <a href=" " id="lang">
+              EN
+              <i class="bi bi-translate"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              التسجيل
+            </a>
+            <ul class="dropdown-menu hide" aria-labelledby="navbarDropdown">
+              <li class="pt-0"><button
+                type="button"
+                class="bg-transparent"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                تسجيل كمستخدم
+              </button></li>
+              <li class="pt-0"><button
+                type="button"
+                class="bg-transparent"
+                data-bs-toggle="modal"
+                data-bs-target="#regist-user">
+                تسجيل كمقدم خدمة
+              </button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <nav>
       <div class="container">
         <a href="index.html">
           <img
@@ -86,7 +149,7 @@
               <a href="blog.html"><li>المقالات</li></a>
               <a href="news.html"><li>الأخبار</li></a>
               <a href="#"><li>تواصل معنا</li></a>
-              <!-- Button trigger modal -->
+              Button trigger modal
 
               <li>
                 <button
@@ -125,7 +188,7 @@
           <span>EN</span>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- ============ header ============ -->
 
     <header>
@@ -448,333 +511,131 @@
       </div>
     </header>
 
-    <section class="about mt-0">
-      <div class="container">
-        <section class="position-relative">
-          <div
-            class="video-hero jquery-background-video-wrapper
-            demo-video-wrapper">
-            <video
-              class="jquery-background-video"
-              autoplay
-              muted
-              loop
-              poster="images/vid.png">
-              <source src="images/Landmark2.mp4" type="video/mp4" />
-            </video>
-            <div class="video-overlay"></div>
-          </div>
-          <div class="page-width">
-            <div class="container">
-              <div class="video-hero--content w-50 m-auto">
-                <h3
-                  class="fw-bold mb-4 wow animate__fadeInRightBig"
-                  data-wow-duration="1s"
-                  data-wow-delay=".1s">
-                  من نحن
-                </h3>
-                <p
-                  class="wow animate__fadeInRightBig"
-                  data-wow-duration="1s"
-                  data-wow-delay=".2s">
-                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                  الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
-                  استخدام
-                </p>
-                <a href="http://"> المزيد</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- <section class="first-about mt-0">
-     
-          <div id="intro-text">
-            <h1>
-              <span id="first-part"> من نحن ؟</span> 
-           
-            </h1>
-            <h3 class="py-3 ">
-              بيت الغابة شركة سياحية متميزة تعمل من أجل ترويج السياحة الريفية والمنتجعات الراقية
-            </h3>
-          </div>
-        </section> -->
-      <div id="about-us">
-        <div
-          class="about-item wow animate__backInDown"
-          data-wow-duration="2s"
-          data-wow-delay="0s">
-          <div class="list">
-            <div class="icon_img">
-              <img src="images/Group.png" alt="" />
-            </div>
-          </div>
-          <div class="p-2">
-            <h5 class="my-3">الرؤية</h5>
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ عن التركيز على
-            </p>
-          </div>
-        </div>
-        <div
-          class="about-item wow animate__backInDown"
-          data-wow-duration="2s"
-          data-wow-delay=".3s">
-          <div class="list">
-            <div class="icon_img">
-              <img src="images/water-sport.png" alt="" />
-            </div>
-          </div>
-          <div class="p-2">
-            <h5 class="my-3">الرسالة</h5>
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ عن التركيز على
-            </p>
-          </div>
-        </div>
-        <div
-          class="about-item wow animate__backInDown"
-          data-wow-duration="2s"
-          data-wow-delay=".5s">
-          <div class="list">
-            <div class="icon_img">
-              <img src="images/taxi.png" alt="" />
-            </div>
-          </div>
-          <div class="p-2">
-            <h5 class="my-3">الهدف</h5>
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ عن التركيز على
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="services">
-      <h3 class="fw-bold mb-3">الخدمات</h3>
-      <div class="serv-carousel">
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Paris</div>
-            <div class="num">01</div>
-            <img src="images/firsting.png" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Warsaw</div>
-            <div class="num">02</div>
-            <img src="images/bicycles.png" />
-          </div>
-        </div>
-
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Madrid</div>
-            <div class="num">03</div>
-            <img
-              src="images/Jet-Ski-Rentals.png"
-            />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Sydney</div>
-            <div class="num">04</div>
-            <img src="https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Istanbul</div>
-            <div class="num">05</div>
-            <img src="https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Prague</div>
-            <div class="num">06</div>
-            <img src="https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Munich</div>
-            <div class="num">07</div>
-            <img src="https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Venice</div>
-            <div class="num">08</div>
-            <img src="https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">Oslo</div>
-            <div class="num">09</div>
-            <img src="https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=" />
-          </div>
-        </div>
-        <div class="serv-item">
-          <div class="carousel-box">
-             
-            <div class="title">London</div>
-            <div class="num">10</div>
-            <img src="https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=" />
-          </div>
-        </div>
-      </div>
-      
-      <div class="layout">
-        <div class="box">High-end, full-service<br />visual content creation<br />for lifestyle branding.</div>
-      </div>  
-      <div class="cursor"></div>
-      <div class="cursor cursor2"></div>
-    </section> -->
     <section class="popular-services">
-      <div class="popular-header header-card">
-        <h2 class="header-card-title">
-          الخدمات
-        </h2>
-        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Facilis, eos.</p>
-      </div>
-      <div class="mini-card-grid">
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title">
-              <a href="single-serv.html">
-                Paris
-              </a>
+      <div class="container">
+        <div class="popular-header header-card">
+          <h2 class="header-card-title">
+            الخدمات
+          </h2>
+        </div>
+        <div class="mini-card-grid">
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title">
+                <a href="single-serv.html">
+                  Paris
+                </a>
+              </div>
+              <div class="num">01</div>
+              <img src="images/firsting.png">
             </div>
-            <div class="num">01</div>
-            <img src="images/firsting.png">
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title">
-              <a href="single-serv.html">
-                Warsaw
-              </a>
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title">
+                <a href="single-serv.html">
+                  Warsaw
+                </a>
+              </div>
+              <div class="num">02</div>
+              <img src="images/bicycles.png" />
             </div>
-            <div class="num">02</div>
-            <img src="images/bicycles.png" />
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title">
-              <a href="single-serv.html">
-                Madrid
-              </a>
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title">
+                <a href="single-serv.html">
+                  Madrid
+                </a>
+              </div>
+              <div class="num">03</div>
+              <img
+                src="images/Jet-Ski-Rentals.png"
+                />
             </div>
-            <div class="num">03</div>
-            <img
-              src="images/Jet-Ski-Rentals.png"
-              />
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-
-            <div class="title">
-              <a href="single-serv.html">
-                Sydney
-              </a>
+          <div class="mini-card">
+            <div class="carousel-box">
+  
+              <div class="title">
+                <a href="single-serv.html">
+                  Sydney
+                </a>
+              </div>
+              <div class="num">04</div>
+              <img
+                src="https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs="
+                />
             </div>
-            <div class="num">04</div>
-            <img
-              src="https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs="
-              />
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title">
-              <a href="single-serv.html">
-                Sydney
-              </a>
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title">
+                <a href="single-serv.html">
+                  Sydney
+                </a>
+              </div>
+              <div class="num">05</div>
+              <img
+                src="https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0="
+                />
             </div>
-            <div class="num">05</div>
-            <img
-              src="https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0="
-              />
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-
-            <div class="title"><a href="single-serv.html">
-                Sydney
-              </a></div>
-            <div class="num">06</div>
-            <img
-              src="https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8="
-              />
+          <div class="mini-card">
+            <div class="carousel-box">
+  
+              <div class="title"><a href="single-serv.html">
+                  Sydney
+                </a></div>
+              <div class="num">06</div>
+              <img
+                src="https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8="
+                />
+            </div>
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title"><a href="single-serv.html">
-                Sydney
-              </a></div>
-            <div class="num">07</div>
-            <img
-              src="https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8="
-              />
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title"><a href="single-serv.html">
+                  Sydney
+                </a></div>
+              <div class="num">07</div>
+              <img
+                src="https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8="
+                />
+            </div>
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title"><a href="single-serv.html">
-                Sydney
-              </a></div>
-            <div class="num">08</div>
-            <img
-              src="https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I="
-              />
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title"><a href="single-serv.html">
+                  Sydney
+                </a></div>
+              <div class="num">08</div>
+              <img
+                src="https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I="
+                />
+            </div>
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title"><a href="single-serv.html">
-                Sydney
-              </a></div>
-            <div class="num">09</div>
-            <img
-              src="https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8="
-              />
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title"><a href="single-serv.html">
+                  Sydney
+                </a></div>
+              <div class="num">09</div>
+              <img
+                src="https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8="
+                />
+            </div>
           </div>
-        </div>
-        <div class="mini-card">
-          <div class="carousel-box">
-            <div class="title"><a href="single-serv.html">
-                Sydney
-              </a></div>
-            <div class="num">10</div>
-            <img
-              src="https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0="
-              />
+          <div class="mini-card">
+            <div class="carousel-box">
+              <div class="title"><a href="single-serv.html">
+                  Sydney
+                </a></div>
+              <div class="num">10</div>
+              <img
+                src="https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0="
+                />
+            </div>
           </div>
         </div>
       </div>
@@ -959,11 +820,6 @@
       </div>
     </section>
 
-    <section id="location" class="location">
-      <div id="map"></div>
-      <br />
-      <button id="fly">Fly</button>
-    </section>
 
     <!-- ============ footer ============ -->
     <section class="send-email">
@@ -1383,8 +1239,6 @@
     <!-- bootstrap script -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- owl carousel script -->
     <script src="js/owl.carousel.min.js"></script>
 
@@ -1397,9 +1251,7 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/select2.min.js"></script>
 
-    <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
     <script src="js/jquery.background-video.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <script
       src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
     <!-- wow script -->
@@ -1417,15 +1269,16 @@
     <script>
       $(document).ready(function () {
         $(".jquery-background-video").bgVideo({ fadeIn: 2000 });
-        var navbar = document.getElementsByTagName("nav");
-        var sticky = navbar[0].offsetHeight;
+        var navbar = document.querySelector(".navbar");
+        var sticky = navbar.offsetHeight;
+        console.log(sticky);
 
         // make nav bar static on scroll
         window.addEventListener("scroll", function () {
           if (this.document.documentElement.scrollTop >= sticky) {
-            $(navbar).css("background", "#fff");
+            navbar.classList.add('scrolled-nav')
           } else {
-            $(navbar).css("background", "transparent");
+            navbar.classList.remove('scrolled-nav')
           }
         });
       });

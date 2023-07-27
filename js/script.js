@@ -1,4 +1,7 @@
+
 $(document).ready(function () {
+  // nav dropdown menu
+
   if($('select').length>0){
     $('select').niceSelect();
   }
