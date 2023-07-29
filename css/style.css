@@ -3303,3 +3303,41 @@ color: var(--white);
 @media (max-width:576px){
 }
 
+
+
+.img-location path:hover{
+  transition: .3s;
+  /* fill: var(--secon-color); */
+  stroke: aqua;
+  stroke-width: 2px;
+  filter: brightness(.85);
+}
+.dots-location {
+
+  position: absolute;
+}
+.dots-location  .dots{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: aqua;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 6px 6px #ffffff50;;
+}
+.dots-location .badge{
+  /* display: none; */
+  background-color: #fff;
+  width: max-content;
+  color: var(--main-color);
+  padding: 10px;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  transition: .4s; 
+}
+.dots-location:hover .badge{
+  /* display: initial; */
+  opacity: 1;
+}
+
+

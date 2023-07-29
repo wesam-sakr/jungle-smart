@@ -279,6 +279,21 @@ $(document).ready(function () {
   });
   
 });
+
+$(document).ready(function() {
+  $(".img-location svg").on("click", function(event) {
+
+      var x = event.offsetX;
+      console.log(event);
+      var y = event.offsetY;
+      // alert("X Coordinate: " + x + " Y Coordinate: " + y);
+      $(".img-location").append(`<div class="dots-location" style="top : ${y}px ;left : ${x}px"><div class="dots"><div class="badge">
+      <span>الرياض</span>
+    </div></div></div> `);
+  });
+});
+
+
   // =========================
   new WOW().init();
   $('select.multi-select').select2();
